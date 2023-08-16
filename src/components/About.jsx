@@ -11,9 +11,11 @@ const About = () => {
 
   return (
     <section id="about" className="about-container">
-        <div className="aboutLeft-container"></div>
+        <div className="aboutLeft-container">
+          left
+        </div>
         <div className="aboutRight-container">
-          <Box padding="1rem 2rem">
+          <Box padding="80px 10px 0 10px">
             <h1>About</h1>
             <Box sx={{ width: "100%" }}>
               <TabContext value={value}>
@@ -27,10 +29,53 @@ const About = () => {
                   <Tab label="Education" value="3" />
                 </Tabs>
                 <TabPanel value="1">
-                  <Box>
-                    <Box>Frontend</Box>
-                    <Box>Backend</Box>
-                  </Box>
+                    <Box display="flex" position="relative" justifyContent="space-around" marginTop="1rem">
+                      <Box sx={{ul:{listStyle:"none"}}}>
+                      <ul>
+                        <li>Front-end Development</li>
+                        <ul style={{padding:".5rem 2rem"}}>
+                          <li>HTML5</li>
+                          <li>CSS3</li>
+                          <li>JavaScript(ES6+)</li>
+                          <li>React.js</li>
+                          <li>Material-UI</li>
+                        </ul> <br/>
+                        <li>Back-end Development</li>
+                        <ul style={{padding:".5rem 2rem"}}>
+                          <li>Node.js</li>
+                          <li>Express.js</li>
+                          <li>PHP</li>
+                        </ul>
+                        <li>Responsive Design</li>
+                        <li>API Integration</li>
+                        <li>Agile/Scrum Methodology</li>
+                      </ul>
+                      </Box>
+                      <Box sx={{ul:{listStyle:"none"}}}>
+                        <ul>
+                        <li>Database</li>
+                        <ul style={{padding:".5rem 2rem"}}>
+                          <li>MySQL</li>
+                          <li>MongoDB</li>
+                          <li>SQLite</li>
+                        </ul>
+                        <li>Version Control</li>
+                        <ul style={{padding:".5rem 2rem"}}>
+                          <li>Git</li>
+                          <li>GitHub</li>
+                        </ul> 
+                        <li>UX/UI Design</li>
+                        <ul style={{padding:".5rem 2rem"}}>
+                          <li>Figma</li>
+                        </ul> 
+                        <li>Graphic Design</li>
+                        <ul style={{padding:".5rem 2rem"}}>
+                          <li>Adobe Photoshop</li>
+                          <li>Canva</li>
+                        </ul>
+                        </ul>
+                      </Box>
+                    </Box>
                 </TabPanel>
                 <TabPanel value="2">
                   This is the content for Disabled Tab 2

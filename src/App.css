@@ -17,6 +17,7 @@
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 .header-container .header {
@@ -28,6 +29,7 @@
 
 .header-container ul {
   display: flex;
+  align-items: center;
   flex-direction: row;
   gap: 2rem;
 }
@@ -35,6 +37,17 @@
 .header-container li {
   list-style: none;
   cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 100px;
+  height: 30px;
+  object-fit: contain;
 }
 
 /* end of header styles*/
@@ -45,18 +58,24 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "heroLeft-container heroRight-container";
-  height: 100vh;
+  height: 100%;
+  place-items: center;
 }
 
 .heroLeft-container {
   grid-area: heroLeft-container;
-  background-color: darkgray;
+  padding: 0 5rem;
 }
 
 .heroRight-container {
   grid-area: heroRight-container;
-  background-color: whitesmoke;
 }
+
+.heroRight-container img {
+  width: 400px;
+}
+
+
 /* end of hero banner styles*/
 
 /* for about styles*/
@@ -65,16 +84,20 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "aboutLeft-container aboutRight-container";
   height: 100vh;
-  padding-top: 70px;
+  place-items: center;
 }
 
 .aboutLeft-container {
   grid-area: aboutLeft-container;
   background-color: darkgray;
+  height: 100%;
+  width: 100%;
 }
 
 .aboutRight-container {
   grid-area: aboutRight-container;
+  height: 100%;
+  width: 100%;
   background-color: whitesmoke;
 }
 /* end of about styles*/

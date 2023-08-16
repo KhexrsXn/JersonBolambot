@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <HeroBanner/>
+      <div><HeroBanner/></div>
       <About/>
       <MyServices/>
       <Portfolio/>
