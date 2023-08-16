@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Source+Code+Pro:ital,wght@0,400;0,600;1,700&display=swap');
+
+*, html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* for header styles*/
+.header-container {
+  background-color: grey;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.header-container .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
+.header-container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.header-container li {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* end of header styles*/
+
+
+/* for hero banner styles*/
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "heroLeft-container heroRight-container";
+  height: 100vh;
+}
+
+.heroLeft-container {
+  grid-area: heroLeft-container;
+  background-color: darkgray;
+}
+
+.heroRight-container {
+  grid-area: heroRight-container;
+  background-color: whitesmoke;
+}
+/* end of hero banner styles*/
+
+/* for about styles*/
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "aboutLeft-container aboutRight-container";
+  height: 100vh;
+  padding-top: 70px;
+}
+
+.aboutLeft-container {
+  grid-area: aboutLeft-container;
+  background-color: darkgray;
+}
+
+.aboutRight-container {
+  grid-area: aboutRight-container;
+  background-color: whitesmoke;
+}
+/* end of about styles*/
