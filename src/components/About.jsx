@@ -37,14 +37,15 @@ const About = () => {
                           <li>HTML5</li>
                           <li>CSS3</li>
                           <li>JavaScript(ES6+)</li>
-                          <li>React.js</li>
+                          <li>Bootstrap</li>
                           <li>Material-UI</li>
+                          <li>React.js</li>
                         </ul> <br/>
                         <li>Back-end Development</li>
                         <ul style={{padding:".5rem 2rem"}}>
                           <li>Node.js</li>
-                          <li>Express.js</li>
                           <li>PHP</li>
+                          <li>Python (Django)</li>
                         </ul>
                         <li>Responsive Design</li>
                         <li>API Integration</li>
@@ -56,7 +57,6 @@ const About = () => {
                         <li>Database</li>
                         <ul style={{padding:".5rem 2rem"}}>
                           <li>MySQL</li>
-                          <li>MongoDB</li>
                           <li>SQLite</li>
                         </ul>
                         <li>Version Control</li>
