@@ -34,7 +34,7 @@ p {
 .header-container {
   background-color: grey;
   width: 100%;
-  height: 70px;
+  height: 50px;
   display: flex;
   align-items: center;
   position: fixed;
@@ -80,6 +80,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "heroLeft-container heroRight-container";
+  width: 100%;
   height: 100%;
   place-items: center;
 }
@@ -101,7 +102,7 @@ p {
 }
 
 .logos {
-  width: 800px;
+  width: 500px;
   overflow: hidden;
   display: flex;
   padding: 0 1rem;
@@ -109,7 +110,7 @@ p {
 
 .logos-slide {
   white-space: nowrap;
-  animation: 15s slide infinite linear;
+  animation: 20s slide infinite linear;
   object-fit: cover ;
   padding: 5px;
   display: flex;
@@ -147,19 +148,71 @@ p {
   grid-template-areas: "aboutLeft-container aboutRight-container";
   height: 100vh;
   place-items: center;
+  background-color: #ffffff;
 }
 
 .aboutLeft-container {
   grid-area: aboutLeft-container;
-  background-color: darkgray;
   height: 100%;
   width: 100%;
+}
+
+.unorder-container li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.unorder-container li img {
+  object-fit: contain;
+  width: 50px;
+  height: 30px;
 }
 
 .aboutRight-container {
   grid-area: aboutRight-container;
   height: 100%;
   width: 100%;
-  background-color: whitesmoke;
 }
 /* end of about styles*/
+
+/* for services styles*/
+
+.services-container {
+  background-color: #cccccc;
+  height: 100vh;
+}
+
+
+/* end of services styles*/
+
+
+/* for skills styles*/
+
+.skills-container {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "left right";
+}
+
+.skills-left {
+  grid-area: left;
+}
+
+.skills-right {
+  grid-area: right;
+}
+/* end of skills styles*/
+
+/* for projects styles*/
+
+.projects-container {
+  background-color: #cccccc;
+  height: 100vh;
+}
+/* end of projects styles*/

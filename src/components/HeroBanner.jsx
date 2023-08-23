@@ -32,14 +32,8 @@ const HeroBanner = () => {
           <h2>Hello, My name is</h2>
           <h1>JERSON BOLAMBOT</h1>
           <h3>and I'm a Web Developer</h3>
-          <p style={{ position: "relative", }}>
-            As a web developer with expertise in designing and crafting websites
-            using languages like JavaScript and Python. My capabilities extend
-            to creating visually appealing and user-friendly sites through
-            frameworks like React, while also excelling in building efficient
-            and scalable web applications. I am passionate about staying abreast
-            of the latest web development trends and technologies, consistently
-            enhancing my skills to remain at the forefront of the field.
+          <p style={{padding:".5rem 0"}}>
+          I'am passionate about learning and keeping up with the latest web development trends and technologies constantly improving my skills and staying ahead in the field.
           </p>            
           <Box padding="1rem 0">
           <h6>Tech Stack:</h6>
