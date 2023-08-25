@@ -2,46 +2,38 @@
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "heroLeft-container heroRight-container";
+    place-items: center;
+    grid-template-areas: "heroLeft heroRight";
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
   }
 
-.hero-container .heroLeft-container {
-    grid-area: heroLeft-container;
-    position: absolute;
-    width: 50%;
-    padding: 0 9.5rem;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+.heroLeft-container {
+    grid-area: heroLeft;
+    height: 100%;
+    width: 100%;
   }
   
-.hero-container .heroRight-container {
-    grid-area: heroRight-container;
+.heroRight-container {
+    grid-area: heroRight;
     /* background-color: brown; */
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
     height: 100%;
+    width: 100%;
+    z-index: 9;
   }
 
 .logos {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    padding: 0 1rem;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  width: 500px;
   }
   
   .logos-slide {
-    white-space: nowrap;
     animation: 18s slide infinite linear;
-    object-fit: cover ;
     padding: 10px 5px;
-    display: flex;
     align-items: center;
+    display: flex;
   }
   
   .logos-slide img {
@@ -50,7 +42,7 @@
   }
   
   .heroLeft-container h3 {
-    display: flex;
+    /* display: flex; */
     font-size: 24px;
     font-weight: 700;
   }
@@ -71,11 +63,11 @@
     color: var(--main-color);
   }
 
-.profession {
+/* .profession {
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+}  */
 .profession img {
     width: 60px;
 }
@@ -86,17 +78,18 @@
   
 .hero-container .heroRight-box {
     position: absolute;
-    width: 600px;
-    height: 600px;
-    top: 6rem;
-    right: -3rem;
+    width: 700px;
+    height: 700px;
+    margin: 10% auto;
+    /* top: 20rem;*/
     /* padding: 5rem; */
     /* background: purple; */
+    border: 5px solid var(--main-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: professioRotate 10s ease-out infinite;
+    animation: professioRotate 5s ease-out infinite;
   } 
 
   @keyframes professioRotate {
@@ -121,62 +114,43 @@
     position: absolute;
     display: flex;
     align-items: center;
+    white-space: nowrap;
     flex-direction: column;
     color: var(--main-color);
     transform: rotate(calc(360deg/ 4 * var(--i)));
-    transform-origin: 300px;
+    transform-origin: 360px;
     left: 0;
-    background: var(--bg-color);
+    background: var(--bg-color1);
     padding: 1rem 2rem ;
   }
 
   .heroRight-container .heroRight-box .profession img {
     object-fit: cover;
   }
-  
-  .hero-container .heroRight-container .heroRight-box .circle {
-    width: 100%;
-    height: 100%;
-    border:  5px solid var(--main-color);
-    border-radius: 50%;
-  }
 
   .heroRight-container .heroRight-box .profession:nth-child(1) {
-    margin-left: -10rem; 
+    margin-left: -13rem; 
   }
 
   .heroRight-container .heroRight-box .profession:nth-child(2) {
-    margin-top: -18rem;
+    margin-top: -17rem;
   }
-  .heroRight-container .heroRight-box .profession:nth-child(2) img {
-    width: 100px;
-    object-fit: cover;
-  }
+
   .heroRight-container .heroRight-box .profession:nth-child(3)  {
-    margin-left: 12rem;
+    margin-left: 11rem;
   }
   .heroRight-container .heroRight-box .profession:nth-child(4) {
     margin-bottom: -14rem;
   }
  
 
-
-
-  /* .heroRight-container .heroRight-box .profession:nth-child(4) img {
-    margin-left: 25px;
-  } */
-
-  .hero-container .heroRight-container .overlay {
+   .hero-container .heroRight-container .overlay {
     position: relative;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 380px solid var(--main-color);
-    border-right: 380px solid var(--main-color);
-    border-bottom: 320px solid var(--main-color);
-    border-left: 300px solid transparent;
-  }
+    height: 100vh;
+    background-color: var(--main-color);
+    -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 49% 54%, 0% 0%);
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 49% 54%, 0% 0%);
+  } 
 
   .hero-container .heroRight-container .image img{
     position: absolute;
@@ -205,3 +179,26 @@
   }
   
   /* end of hero banner styles*/
+
+  @media only screen and (max-width: 1024px)  {
+
+    .hero-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center;
+      grid-template-areas: "heroLeft" "heroRight";
+      height: 100vh;
+      width: 100vw;
+    }
+    .hero-container .heroRight-container .overlay {
+      -webkit-clip-path: polygon(54% 79%, 100% 48%, 100% 100%, 0 100%, 0 45%);
+      clip-path: polygon(54% 79%, 100% 48%, 100% 100%, 0 100%, 0 45%);
+    }
+    .heroRight-container .heroRight-box {
+      margin-top: 20rem;
+      margin-left: 10rem;
+    }
+    /* .heroRight-container .heroRight-box .profession {
+      transform: rotate(270deg);
+    } */
+  }

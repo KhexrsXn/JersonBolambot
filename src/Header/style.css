@@ -1,47 +1,35 @@
 /* for header styles*/
 .header-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 7%;
-    height: 60px;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    transition: .3s ease-in;
-  }
-  .header-container.sticky {
-    background: var(--bg-color);
-    box-shadow: 0 .5rem 1rem var(--shadow-color);
-  }  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  transition: .3s linear;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
 
-  .header-container.sticky .navbar a {
-    color: var(--text-color);
-  }
+.header-container img {
+  width: 120px;
+  object-fit: cover;
+}
 
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img{
-    width: 100px;
-    height: 30px;
-    object-fit: contain;
-  }
-  .navbar {
-    display: flex;
-    align-items: center;
-  }
-  .navbar a {
-    font-size: 1.7rem;
-    text-decoration: none;
-    font-weight: 500;
-    margin-right: 3.5rem;
-    color: var(--white-color);
-  }
-  
-  
+.header-container.sticky {
+  background: var(--white-color);
+  box-shadow: 0 .5rem 1rem var(--shadow-color);
+} 
+
+.navbar {
+  gap: 3rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark-color);
+}
   
   /* end of header styles*/

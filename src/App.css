@@ -11,20 +11,21 @@
 }
 
 :root {
-  --bg-color: #fdfdfd;
+  --bg-color1: #fdfdfd;
+  --bg-color2: #cccccc;
   --text-color: #333;
   --main-color: #230B3D;
   --white-color: #fdfdfd;
   --shadow-color: rgba(0,0,0,0.2);
+  --secondary-color: maroon;
 }
 
 html {
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   overflow-x: hidden;
 }
 
 body {
-  background-color: var(--bg-color);
   color: var(--text-color);
 }
 
@@ -95,12 +96,3 @@ p {
   background-color: #cccccc;
   height: 100vh;
 }
-/* end of projects styles*/
-/* 
-.show-container {
-  display: flex;
-}
-
-.hide-container {
-  display: none;
-} */
