@@ -91,7 +91,7 @@ const HeroBanner = () => {
           
           <div className="circle"></div>
         </div>
-        {/* <div className="overlay"></div> */}
+        <div className="overlay"></div>
       </div>
     </section>
   );
