@@ -29,42 +29,34 @@ body {
 }
 
 
-/* for about styles*/
-.about-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "aboutLeft-container aboutRight-container";
-  height: 100vh;
-  place-items: center;
-  background-color: #ffffff;
+h1 {
+  font-size: 40px;
+  font-weight: 900;
 }
-
-.aboutLeft-container {
-  grid-area: aboutLeft-container;
-  height: 100%;
-  width: 100%;
+h2 {
+  font-size: 32px;
+  font-weight: 800;
 }
-
-.unorder-container li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 5px 0;
+h3 {
+  font-size: 24px;
+  font-weight: 700;
 }
-
-.unorder-container li img {
-  object-fit: contain;
-  width: 50px;
-  height: 30px;
+h4 {
+  font-size: 20px;
+  font-weight: 600;
 }
-
-.aboutRight-container {
-  grid-area: aboutRight-container;
-  height: 100%;
-  width: 100%;
+h5 {
+  font-size: 16px;
+  font-weight: 500;
 }
-/* end of about styles*/
-
+h6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+p {
+  font-size: 12px;
+  font-weight: 300;
+}
 /* for services styles*/
 
 .services-container {

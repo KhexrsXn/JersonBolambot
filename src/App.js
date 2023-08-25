@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import About from "./components/About";
+import About from "./About";
 import Header from "./Header";
 import HeroBanner from "./HeroBanner";
 import MyServices from "./components/MyServices";

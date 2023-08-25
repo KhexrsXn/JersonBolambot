@@ -16,6 +16,8 @@ import git from "../components/images/git.png";
 import github from "../components/images/github.png";
 import figma from "../components/images/figma.png";
 import webdev from "../components/images/webdev.png";
+import uiux from "../components/images/uiux.png"
+import marketing from "../components/images/marketing.png"
 
 // import IMG1 from "../components/images/IMGJSON.png"
 
@@ -23,16 +25,15 @@ const HeroBanner = () => {
   return (
     <section id="home" className="hero-container">
       <div className="heroLeft-container">
-        <Box width="600px" marginLeft="-4.5rem">
           <h3>Hello, My name is</h3>
-          <h1>JERSON BOLAMBOT</h1>
+          <h1>BOLAMBOT, JERSON</h1>
           <p style={{ padding: ".5rem 0" }}>
             I'am passionate about learning and keeping up with the latest web
             development trends and technologies constantly improving my skills
             and staying ahead in the field.
           </p>
-          <Box padding="1rem 0">
-            <p>Tech Stack:</p>
+          <Box padding=".5rem 0">
+            <label>Tech Stack:</label>
             <Box className="logos">
               <Box className="logos-slide">
                 <img src={html5} alt="" />
@@ -68,7 +69,6 @@ const HeroBanner = () => {
               </Box>
             </Box>
           </Box>
-        </Box>
       </div>
       <div className="heroRight-container">
         <div className="heroRight-box">
@@ -77,7 +77,7 @@ const HeroBanner = () => {
             <h3>Web Developer</h3>
           </div>
           <div className="profession" style={{ "--i": 1 }}>
-            <img src={webdev} alt="" />
+            <img src={uiux} alt="" />
             <h3>Web Designer</h3>
           </div>
           <div className="profession" style={{ "--i": 2 }}>
@@ -85,12 +85,16 @@ const HeroBanner = () => {
             <h3>Frontend Developer</h3>
           </div>
           <div className="profession" style={{ "--i": 3 }}>
-            <img src={webdev} alt="" />
+            <img src={marketing} alt="" />
             <h3>Marketing</h3>
           </div>
           
           <div className="circle"></div>
         </div>
+        <div className="overlay"></div>
+        {/* <div className="image">
+        <img src={IMG1} alt=""/>
+        </div> */}
         <div className="overlay"></div>
       </div>
     </section>

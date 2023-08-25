@@ -5,15 +5,15 @@
     left: 0;
     width: 100%;
     padding: 2rem 7%;
-    /* background-color: yellowgreen; */
+    height: 60px;
     z-index: 100;
     display: flex;
     justify-content: space-between;
-    transition: .5s ease-in-out;
+    transition: .3s ease-in;
   }
   .header-container.sticky {
     background: var(--bg-color);
-    box-shadow: 0 .1rem 1rem var(--shadow-color);
+    box-shadow: 0 .5rem 1rem var(--shadow-color);
   }  
 
   .header-container.sticky .navbar a {
