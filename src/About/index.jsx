@@ -7,6 +7,9 @@ import SchoolIcon from '@mui/icons-material/School';
 // import IMGJSON from '../components/images/IMGJSON.png'
 
 const About = () => {
+
+
+
   return (
     <section id="about" className="about-container">
       <div className="aboutLeft-container">
@@ -19,12 +22,12 @@ const About = () => {
         <h1>
           About<span>ME</span>
         </h1>
-        <Box
+        {/* <Box
           display="flex"
           justifyContent="flex-start"
           alignItems="center"
           gap="2rem"
-          padding="2rem 0 1rem 0"
+          padding="1rem 1rem 1rem 0 "
         >
           <div className="card">
             <WorkspacePremiumIcon />
@@ -47,8 +50,8 @@ const About = () => {
             <h6>Degree Holder</h6>
             <h6>BS Information Technology</h6>
           </div>
-        </Box>
-        <Box padding=".5rem  10rem 0 0 ">
+        </Box> */}
+        <Box>
           <h6>
             As a web developer, I am skilled in designing and creating websites
             using various programming languages like JavaScript and Python. I
@@ -60,6 +63,8 @@ const About = () => {
         </Box>
         </Box>
       </div>
+
+     
     </section>
   )
 }

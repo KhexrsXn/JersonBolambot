@@ -6,8 +6,9 @@
   height: 100vh;
   width: 100vw;
   place-items: center;
-  
   z-index: 999;
+  padding: 4rem;
+  background: black;
 }
 
 .aboutLeft-container {
@@ -43,8 +44,8 @@
 .about-container .card {
   background-color: var(--main-color);
   white-space: nowrap;
-  width: 250px;
-  height: 200px;
+  width: 240px;
+  padding: 1rem;
   color: var(--white-color);
   display: flex;
   justify-content: center;

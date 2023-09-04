@@ -1,204 +1,207 @@
-/* for hero banner styles*/
-.hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    grid-template-areas: "heroLeft heroRight";
-    height: 100vh;
-    width: 100vw;
-  }
-
-.heroLeft-container {
-    grid-area: heroLeft;
-    height: 100%;
-    width: 100%;
-  }
-  
-.heroRight-container {
-    grid-area: heroRight;
-    /* background-color: brown; */
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-  }
-
-.logos {
-  position: absolute;
-  overflow: hidden;
+.home {
   display: flex;
-  width: 500px;
-  }
-  
-  .logos-slide {
-    animation: 18s slide infinite linear;
-    padding: 10px 5px;
-    align-items: center;
-    display: flex;
-  }
-  
-  .logos-slide img {
-    height: 50px;
-    margin: 0 10px 0 10px;
-  }
-  
-  .heroLeft-container h3 {
-    /* display: flex; */
-    font-size: 24px;
-    font-weight: 700;
-  }
-  
-  .heroLeft-container h1 {
-    font-size: 40px;
-    font-weight: 900;
-  }
-  
-  .heroLeft-container p {
-    font-size: 14px;
-    font-weight: 500;
-  }
+  align-items: center;
+}
+.home .home-content {
+  max-width: 44rem;
+}
+.home-content h3{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: .3;
+}
+.home-content h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.home-content p {
+  font-size: 1.6rem;
+}
 
-  .heroLeft-container label {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--main-color);
-  }
-
-/* .profession {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}  */
+.home .profession-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  height: 100vh;
+  width: 968px;
+  /* background: red; */
+  overflow: hidden;
+  pointer-events: none;
+}
 .profession img {
-    width: 60px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
-.profession h3 {
-    font-size: 2.5rem;
-    font-weight: 900;
+.home .profession-container .profession-box {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  height: 968px;
+  width: 968px;
+  /* background: purple; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: professioRotate 10s ease-out infinite;
 }
-  
-.hero-container .heroRight-box {
-    position: absolute;
-    width: 700px;
-    height: 700px;
-    margin: 10% auto;
-    /* top: 20rem;*/
-    /* padding: 5rem; */
-    /* background: purple; */
-    border: 5px solid var(--main-color);
-    border-radius: 50%;
-    display: flex;
+
+.home .profession-box .profession {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: rotate(calc(360deg/4 * var(--i)));
+  transform-origin: 480px;
+  left: 0;
+  background: var(--bg-color);
+  padding: 13px 0;
+}
+.home .profession h3 {
+  font-size: 3.2rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.home .profession-box .circle {
+  width: 750px;
+  height: 750px;
+  /* background: red; */
+  border: 5px solid var(--main-color);
+  border-radius: 50% ;
+}
+
+.home .profession-box .profession:nth-child(1) {
+  margin-left: 55px;
+}
+.home .profession-box .profession:nth-child(2) {
+  margin-top: 100px;
+}
+.home .profession-box .profession:nth-child(3) {
+  margin-left: -30px;
+}
+.home .profession-box .profession:nth-child(4) {
+  margin-top: -60px;
+}
+
+.home .profession-container .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: var(--main-color); */
+  border-top: 500px solid var(--main-color);
+  border-right: 500px solid var(--main-color);
+  border-bottom: 510px solid var(--main-color);
+  border-left: 510px solid transparent;
+
+  /* border-top: 500px solid red;
+  border-right: 500px solid blue;
+  border-bottom: 500px solid yellowgreen; */
+  /* -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 49% 54%, 0% 0%);
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 49% 54%, 0% 0%); */
+}
+.home-img img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  pointer-events: none;
+}
+
+@keyframes professioRotate {
+  0%, 20% {
+      transform: rotate(0deg);
+  }
+  25%, 45% {
+      transform: rotate(-90deg);
+  }
+  50%, 70% {
+      transform: rotate(-180deg);
+  }
+  75%, 95% {
+      transform: rotate(-270deg);
+  }
+  100% {
+      transform: rotate(-360deg);
+  }
+}
+
+@media (max-width: 1600px) {
+  .home .profession-container  {
+    right: -10rem;
+  }
+  .home .profession-container .profession-box {
+    top: 1rem;
+    right: -5rem;
+  }
+}
+
+/* @media (max-width: 1300px) {
+  .home .profession-container  {
+    right: -50rem;
+  }
+  .home .profession-container .profession-box {
+    top: 1rem;
+  }
+} */
+
+@media (max-width: 768px) {
+  .home {
+    padding: 0 3% 23rem;
     justify-content: center;
     align-items: center;
-    animation: professioRotate 5s ease-out infinite;
-  } 
-
-  @keyframes professioRotate {
-    0%, 20% {
-        transform: rotate(0deg);
-    }
-    25%, 45% {
-        transform: rotate(-90deg);
-    }
-    50%, 70% {
-        transform: rotate(-180deg);
-    }
-    75%, 95% {
-        transform: rotate(-270deg);
-    }
-    100% {
-        transform: rotate(-360deg);
-    }
+  }
+  .home h3 {
+    font-size: 2.6rem;
+  }
+  .home h1 {
+    font-size: 5rem;
+  }
+  .home .profession-container .overlay {
+    position: fixed;
+    top: 70rem;
+    left: 50%;
+    right: 0;
+    transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+    
   }
 
-  .heroRight-container .heroRight-box .profession {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    flex-direction: column;
-    color: var(--main-color);
-    transform: rotate(calc(360deg/ 4 * var(--i)));
-    transform-origin: 360px;
+  .home .profession-container {
     left: 0;
-    background: var(--bg-color1);
-    padding: 1rem 2rem ;
+    width: 100%;
+    height: 100%;
   }
 
-  .heroRight-container .heroRight-box .profession img {
-    object-fit: cover;
-  }
-
-  .heroRight-container .heroRight-box .profession:nth-child(1) {
-    margin-left: -13rem; 
-  }
-
-  .heroRight-container .heroRight-box .profession:nth-child(2) {
-    margin-top: -17rem;
-  }
-
-  .heroRight-container .heroRight-box .profession:nth-child(3)  {
-    margin-left: 11rem;
-  }
-  .heroRight-container .heroRight-box .profession:nth-child(4) {
-    margin-bottom: -14rem;
-  }
- 
-
-   .hero-container .heroRight-container .overlay {
-    position: relative;
-    height: 100vh;
-    background-color: var(--main-color);
-    -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 49% 54%, 0% 0%);
-    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 49% 54%, 0% 0%);
+  .home .profession-container .profession-box {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    border-radius: 0;
+    width: 100%;
   } 
 
-  .hero-container .heroRight-container .image img{
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    width: 600px;
-    height: 600px;
+  .home .profession-box .profession {
+    padding: 0 13px;
+    left: auto;
+    transform-origin: 0;
   }
 
-  @keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+  .home .profession-box .profession:nth-child(1) {
+    transform: rotate(-90deg) translate(-120px, -210px);
   }
-  
-  @keyframes slidein {
-    from {
-      margin-left: -50%;
-    }
-    to {
-      margin-left: 0%;
-    }
+  .home .profession-box .profession:nth-child(2) {
+    transform: rotate(0deg) translate(0px, -335px);
   }
-  
-  /* end of hero banner styles*/
-
-  @media only screen and (max-width: 1024px)  {
-
-    .hero-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      place-items: center;
-      grid-template-areas: "heroLeft" "heroRight";
-      height: 100vh;
-      width: 100vw;
-    }
-    .hero-container .heroRight-container .overlay {
-      -webkit-clip-path: polygon(54% 79%, 100% 48%, 100% 100%, 0 100%, 0 45%);
-      clip-path: polygon(54% 79%, 100% 48%, 100% 100%, 0 100%, 0 45%);
-    }
-    .heroRight-container .heroRight-box {
-      margin-top: 20rem;
-      margin-left: 10rem;
-    }
-    /* .heroRight-container .heroRight-box .profession {
-      transform: rotate(270deg);
-    } */
+  .home .profession-box .profession:nth-child(3) {
+    transform: rotate(90deg) translate(-115px, -450px);
   }
+  .home .profession-box .profession:nth-child(4) {
+    transform: rotate(180deg) translate(-220px, -335px);
+  }
+}

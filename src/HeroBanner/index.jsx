@@ -19,92 +19,84 @@ import webdev from "../components/images/webdev.png";
 import uiux from "../components/images/uiux.png";
 import marketing from "../components/images/marketing.png";
 import frontend from "../components/images/frontend.png";
-
 // import IMG1 from "../components/images/IMGJSON.png"
 
 const HeroBanner = () => {
   return (
-    <section id="home" className="hero-container">
-      <div className="heroLeft-container">
-        <Box
-          height="100%"
-          marginLeft="5rem"
-          padding="0 15rem 0 0"
-          className="d-flex justify-content-center flex-column"
-        >
-          <h3>Hello, My name is</h3>
-          <h1>BOLAMBOT, JERSON</h1>
-          <p>
-            I'am passionate about learning and keeping up with the latest web
-            development trends and technologies constantly improving my skills
-            and staying ahead in the field.
-          </p>
-          <Box>
-            <label>Tech Stack:</label>
-            <Box className="logos">
-              <Box className="logos-slide">
-                <img src={html5} alt="" />
-                <img src={css3} alt="" />
-                <img src={javascript6} alt="" />
-                <img src={bootstrap} alt="" />
-                <img src={materialUI} alt="" />
-                <img src={react} alt="" />
-                <img src={nodejs} alt="" />
-                <img src={django} alt="" />
-                <img src={php} alt="" />
-                <img src={mysql} alt="" />
-                <img src={SQLite} alt="" />
-                <img src={git} alt="" />
-                <img src={github} alt="" />
-                <img src={figma} alt="" />
-              </Box>
-              <Box className="logos-slide">
-                <img src={html5} alt="" />
-                <img src={css3} alt="" />
-                <img src={javascript6} alt="" />
-                <img src={bootstrap} alt="" />
-                <img src={materialUI} alt="" />
-                <img src={react} alt="" />
-                <img src={nodejs} alt="" />
-                <img src={django} alt="" />
-                <img src={php} alt="" />
-                <img src={mysql} alt="" />
-                <img src={SQLite} alt="" />
-                <img src={git} alt="" />
-                <img src={github} alt="" />
-                <img src={figma} alt="" />
-              </Box>
+    <section id="home" className="home">
+      <div className="home-content">
+        <h3>Hello, My name is</h3>
+        <h1>BOLAMBOT, JERSON</h1>
+        <p>
+          I'am passionate about learning and keeping up with the latest web
+          development trends and technologies constantly improving my skills and
+          staying ahead in the field.
+        </p>
+        <label>Tech Stack:</label>
+        {/* <Box className="logos">
+            <Box className="logos-slide">
+              <img src={html5} alt="" />
+              <img src={css3} alt="" />
+              <img src={javascript6} alt="" />
+              <img src={bootstrap} alt="" />
+              <img src={materialUI} alt="" />
+              <img src={react} alt="" />
+              <img src={nodejs} alt="" />
+              <img src={django} alt="" />
+              <img src={php} alt="" />
+              <img src={mysql} alt="" />
+              <img src={SQLite} alt="" />
+              <img src={git} alt="" />
+              <img src={github} alt="" />
+              <img src={figma} alt="" />
             </Box>
-          </Box>
-        </Box>
+            <Box className="logos-slide">
+              <img src={html5} alt="" />
+              <img src={css3} alt="" />
+              <img src={javascript6} alt="" />
+              <img src={bootstrap} alt="" />
+              <img src={materialUI} alt="" />
+              <img src={react} alt="" />
+              <img src={nodejs} alt="" />
+              <img src={django} alt="" />
+              <img src={php} alt="" />
+              <img src={mysql} alt="" />
+              <img src={SQLite} alt="" />
+              <img src={git} alt="" />
+              <img src={github} alt="" />
+              <img src={figma} alt="" />
+            </Box>
+          </Box> */}
       </div>
-      <div className="heroRight-container">
-        <div className="heroRight-box">
+      <div className="profession-container">
+        <div className="profession-box">
           <div className="profession" style={{ "--i": 0 }}>
             <img src={webdev} alt="" />
-            <h3>Fullstack Developer</h3>
+            <h3>Front-End</h3>
           </div>
           <div className="profession" style={{ "--i": 1 }}>
             <img src={uiux} alt="" />
-            <h3>Web Designer</h3>
+            <h3>Back-End</h3>
           </div>
           <div className="profession" style={{ "--i": 2 }}>
             <img src={frontend} alt="" />
-            <h3>Frontend Developer</h3>
+            <h3>Web Design</h3>
           </div>
           <div className="profession" style={{ "--i": 3 }}>
             <img src={marketing} alt="" />
-            <h3>Marketing</h3>
+            <h3>Webflow</h3>
+            <h3>Development</h3>
           </div>
-          
+
+          <div className="circle"></div>
         </div>
         <div className="overlay"></div>
-        {/* <div className="image">
-        <img src={IMG1} alt=""/>
-        </div> */}
       </div>
+      
+      {/* <div className="home-img">
+        <img src={IMG1} alt=""/>
+      </div> */}
     </section>
   );
 };
-
 export default HeroBanner;

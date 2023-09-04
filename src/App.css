@@ -11,88 +11,61 @@
 }
 
 :root {
-  --bg-color1: #fdfdfd;
-  --bg-color2: #cccccc;
-  --text-color: #333;
-  --main-color: #230B3D;
-  --white-color: #fdfdfd;
+  --bg-color: #ffffff;
+  --dark-color: #000;
+  --white-color: #fff;
+  --main-color: #613DC1;
   --shadow-color: rgba(0,0,0,0.2);
   --secondary-color: maroon;
 }
 
 html {
-  /* font-size: 62.5%; */
+  font-size: 62.5%;
   overflow-x: hidden;
 }
 
 body {
   color: var(--text-color);
+  background: var(--bg-color);
 }
 
-
-h1 {
-  font-size: 40px;
-  font-weight: 900;
-}
-h2 {
-  font-size: 32px;
-  font-weight: 800;
-}
-h3 {
-  font-size: 24px;
-  font-weight: 700;
-}
-h4 {
-  font-size: 20px;
-  font-weight: 600;
-}
-h5 {
-  font-size: 16px;
-  font-weight: 500;
-}
-h6 {
-  font-size: 14px;
-  font-weight: 400;
-}
-p {
-  font-size: 12px;
-  font-weight: 300;
-}
-/* for services styles*/
-
-.services-container {
-  background-color: #cccccc;
-  height: 100vh;
+section {
+  min-height: 100vh;
+  padding: 10rem 7% 2rem;
 }
 
+/* BREAKPOINTS */
 
-/* end of services styles*/
 
+/* @media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
 
-/* for skills styles*/
+  .home .profession-container {
+    height: 85.8rem;
+  }
 
-.skills-container {
-  background-color: #ffffff;
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "left right";
-}
+  .home .profession-container .profession-box {
+    right: -12rem;
+    height: 85.8rem;
+  }
 
-.skills-left {
-  grid-area: left;
-}
+  .home .profession-container .overlay {
+    right: -9rem;
+  }
+} */
 
-.skills-right {
-  grid-area: right;
-}
-/* end of skills styles*/
+/* @media (max-width: 1024px) {
+  .header {
+    padding: 2rem 3%;
+  }
 
-/* for projects styles*/
+  .home .profession-container .profession-box {
+    right: -22rem;
+  }
 
-.projects-container {
-  background-color: #cccccc;
-  height: 100vh;
-}
+  .home .profession-container .overlay {
+    right: -15rem;
+  }
+} */
