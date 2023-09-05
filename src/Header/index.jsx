@@ -1,10 +1,18 @@
-import React, { useEffect } from "react"; // Import useEffect
+import React, { useEffect, useState } from "react"; // Import useEffect
 import Logo from "../components/images/Jerson.png";
 import "../Header/style.css";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import { Box } from "@mui/material";
 
 const Header = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const handleMenuClick = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+
   useEffect(() => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('header nav a');
@@ -25,7 +33,7 @@ const Header = () => {
       });
 
       const header = document.querySelector(".header");
-      header.classList.toggle("sticky", window.scrollY > 100);
+      header.classList.toggle("sticky", window.scrollY > 20);
     };
 
     // Attach the scroll event listener when the component mounts
@@ -35,21 +43,26 @@ const Header = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // Use an empty dependency array to run this effect only once
+  }, []);
+
+
 
   return (
     <header className="header">
       <a href="/" className="logo">
         <img src={Logo} alt="logo"/>
       </a>
-      <nav className="navbar">
-        <a href="#home" className="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <Box><DarkModeIcon/></Box>
+      <nav className={`navbar ${isMenuOpen ? 'active animated-element' : 'animated-element'}`}>
+        <a onClick={handleMenuClick} href="#home" className="active">Home</a>
+        <a onClick={handleMenuClick} href="#about">About</a>
+        <a onClick={handleMenuClick} href="#contact">Services</a>
+        <a onClick={handleMenuClick} href="#projects">Projects</a>
+        <a onClick={handleMenuClick} href="#contact">Contact</a>
       </nav>
+      <Box padding="0 1rem 0 2rem"><DarkModeIcon/></Box>
+      <Box className="burger-menu" padding="0 1rem" onClick={handleMenuClick}>
+        {!isMenuOpen ? <MenuIcon /> :  <CloseIcon /> } 
+      </Box>
     </header>
   );
 };

@@ -1,9 +1,9 @@
 import React from 'react'
 import '../About/style.css'
 import { Box } from '@mui/material'
-import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium'
-import VerifiedIcon from '@mui/icons-material/Verified';
-import SchoolIcon from '@mui/icons-material/School';
+// import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium'
+// import VerifiedIcon from '@mui/icons-material/Verified';
+// import SchoolIcon from '@mui/icons-material/School';
 // import IMGJSON from '../components/images/IMGJSON.png'
 
 const About = () => {

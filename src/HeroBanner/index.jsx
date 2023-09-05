@@ -1,21 +1,21 @@
 import React, { useEffect } from "react";
-import { Box } from "@mui/material";
+// import { Box } from "@mui/material";
 import "../HeroBanner/style.css";
 import "../App.css";
-import html5 from "../components/images/html5.png";
-import css3 from "../components/images/css3.png";
-import javascript6 from "../components/images/JavaScript6.png";
-import bootstrap from "../components/images/bootstrap.png";
-import materialUI from "../components/images/material-ui.png";
-import react from "../components/images/react.png";
-import nodejs from "../components/images/nodejs.png";
-import django from "../components/images/django.png";
-import php from "../components/images/php.png";
-import mysql from "../components/images/mysql.png";
-import SQLite from "../components/images/SQLite.png";
-import git from "../components/images/git.png";
-import github from "../components/images/github.png";
-import figma from "../components/images/figma.png";
+// import html5 from "../components/images/html5.png";
+// import css3 from "../components/images/css3.png";
+// import javascript6 from "../components/images/JavaScript6.png";
+// import bootstrap from "../components/images/bootstrap.png";
+// import materialUI from "../components/images/material-ui.png";
+// import react from "../components/images/react.png";
+// import nodejs from "../components/images/nodejs.png";
+// import django from "../components/images/django.png";
+// import php from "../components/images/php.png";
+// import mysql from "../components/images/mysql.png";
+// import SQLite from "../components/images/SQLite.png";
+// import git from "../components/images/git.png";
+// import github from "../components/images/github.png";
+// import figma from "../components/images/figma.png";
 import webdev from "../components/images/webdev.png";
 import uiux from "../components/images/uiux.png";
 import marketing from "../components/images/marketing.png";
@@ -27,7 +27,7 @@ const HeroBanner = () => {
       const professionBox = document.querySelector(".profession-box");
 
       if (professionBox) {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 10) {
           professionBox.style.display = "none";
           professionBox.style.animation = "fadeInOut 1s ease-in-out, professioRotate 8s ease-out infinite";
         } else {
@@ -48,7 +48,7 @@ const HeroBanner = () => {
     <section id="home" className="home">
       <div className="home-content">
         <div className="home-container">
-          <h3>Hi!, I'm Jerson</h3>
+          <h3>Hi! I'm Jerson</h3>
           <h1><b style={{ color: "var(--main-color)" }}>Full Stack</b> Developer</h1>
           <h6>
             I'am passionate about learning and keeping up with the latest web
