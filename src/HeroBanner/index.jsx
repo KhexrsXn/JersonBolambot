@@ -1,6 +1,7 @@
+import React, { useEffect } from "react";
 import { Box } from "@mui/material";
 import "../HeroBanner/style.css";
-import React from "react";
+import "../App.css";
 import html5 from "../components/images/html5.png";
 import css3 from "../components/images/css3.png";
 import javascript6 from "../components/images/JavaScript6.png";
@@ -19,84 +20,68 @@ import webdev from "../components/images/webdev.png";
 import uiux from "../components/images/uiux.png";
 import marketing from "../components/images/marketing.png";
 import frontend from "../components/images/frontend.png";
-// import IMG1 from "../components/images/IMGJSON.png"
 
 const HeroBanner = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const professionBox = document.querySelector(".profession-box");
+
+      if (professionBox) {
+        if (window.scrollY > 100) {
+          professionBox.style.display = "none";
+          professionBox.style.animation = "fadeInOut 1s ease-in-out, professioRotate 8s ease-out infinite";
+        } else {
+          professionBox.style.display = "block";
+          professionBox.style.animation = "fadeInOut 1s ease-in-out, professioRotate 8s ease-out infinite";
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section id="home" className="home">
       <div className="home-content">
-        <h3>Hello, My name is</h3>
-        <h1>BOLAMBOT, JERSON</h1>
-        <p>
-          I'am passionate about learning and keeping up with the latest web
-          development trends and technologies constantly improving my skills and
-          staying ahead in the field.
-        </p>
-        <label>Tech Stack:</label>
-        {/* <Box className="logos">
-            <Box className="logos-slide">
-              <img src={html5} alt="" />
-              <img src={css3} alt="" />
-              <img src={javascript6} alt="" />
-              <img src={bootstrap} alt="" />
-              <img src={materialUI} alt="" />
-              <img src={react} alt="" />
-              <img src={nodejs} alt="" />
-              <img src={django} alt="" />
-              <img src={php} alt="" />
-              <img src={mysql} alt="" />
-              <img src={SQLite} alt="" />
-              <img src={git} alt="" />
-              <img src={github} alt="" />
-              <img src={figma} alt="" />
-            </Box>
-            <Box className="logos-slide">
-              <img src={html5} alt="" />
-              <img src={css3} alt="" />
-              <img src={javascript6} alt="" />
-              <img src={bootstrap} alt="" />
-              <img src={materialUI} alt="" />
-              <img src={react} alt="" />
-              <img src={nodejs} alt="" />
-              <img src={django} alt="" />
-              <img src={php} alt="" />
-              <img src={mysql} alt="" />
-              <img src={SQLite} alt="" />
-              <img src={git} alt="" />
-              <img src={github} alt="" />
-              <img src={figma} alt="" />
-            </Box>
-          </Box> */}
+        <div className="home-container">
+          <h3>Hi!, I'm Jerson</h3>
+          <h1><b style={{ color: "var(--main-color)" }}>Full Stack</b> Developer</h1>
+          <h6>
+            I'am passionate about learning and keeping up with the latest web
+            development trends and technologies constantly improving my skills and
+            staying ahead in the field.
+          </h6>
+          <label>Tech Stack:</label>
+        </div>
       </div>
       <div className="profession-container">
         <div className="profession-box">
           <div className="profession" style={{ "--i": 0 }}>
             <img src={webdev} alt="" />
-            <h3>Front-End</h3>
+            <h4>Front-End</h4>
           </div>
           <div className="profession" style={{ "--i": 1 }}>
             <img src={uiux} alt="" />
-            <h3>Back-End</h3>
+            <h4>Back-End</h4>
           </div>
           <div className="profession" style={{ "--i": 2 }}>
             <img src={frontend} alt="" />
-            <h3>Web Design</h3>
+            <h4>Web Design</h4>
           </div>
           <div className="profession" style={{ "--i": 3 }}>
             <img src={marketing} alt="" />
-            <h3>Webflow</h3>
-            <h3>Development</h3>
+            <h4>Webflow</h4>
+            <h4>Development</h4>
           </div>
-
-          <div className="circle"></div>
         </div>
         <div className="overlay"></div>
       </div>
-      
-      {/* <div className="home-img">
-        <img src={IMG1} alt=""/>
-      </div> */}
     </section>
   );
 };
+
 export default HeroBanner;

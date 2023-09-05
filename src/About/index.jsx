@@ -52,14 +52,14 @@ const About = () => {
           </div>
         </Box> */}
         <Box>
-          <h6>
+          {/* <h6>
             As a web developer, I am skilled in designing and creating websites
             using various programming languages like JavaScript and Python. I
             have experience in web development that is responsive,
             user-friendly, and visually appealing, using web development
             frameworks such as React. I also have experience in building web
             applications that are fast, efficient, and scalable.
-          </h6>
+          </h6> */}
         </Box>
         </Box>
       </div>

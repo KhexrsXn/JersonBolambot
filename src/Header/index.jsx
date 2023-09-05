@@ -1,48 +1,55 @@
-import React from "react";
-import Logo from "../components/images/Jerson.png"
-import "../Header/style.css"
+import React, { useEffect } from "react"; // Import useEffect
+import Logo from "../components/images/Jerson.png";
+import "../Header/style.css";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-// import LightModeIcon from '@mui/icons-material/LightMode';
+import { Box } from "@mui/material";
 
 const Header = () => {
+  useEffect(() => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('header nav a');
 
-  let sections = document.querySelectorAll('section');
-  let navLinks = document.querySelectorAll('header nav a'); 
-
-    window.onscroll = () => {
+    const handleScroll = () => {
       sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset= sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 150;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
 
         if (top >= offset && top < offset + height) {
           navLinks.forEach(links => {
             links.classList.remove('active');
-            document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            document.querySelector(`header nav a[href*=${id}]`).classList.add('active');
           });
-        };
-      })
+        }
+      });
 
+      const header = document.querySelector(".header");
+      header.classList.toggle("sticky", window.scrollY > 100);
+    };
 
-      let header = document.querySelector(".header"); 
-    header.classList.toggle("sticky", window.scrollY > 100);
-    }
-  
-    return (
+    // Attach the scroll event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Use an empty dependency array to run this effect only once
+
+  return (
     <header className="header">
-        <a href="/" className="logo">
-          <img src={Logo} alt="logo"/>
-        </a>
-        <nav className="navbar">
-          <a href="#home" className="active">Home</a>
-          <a href="#about">About</a>
-          <a href="#contact">Services</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-          <div><DarkModeIcon/></div>
-        </nav>
-        
+      <a href="/" className="logo">
+        <img src={Logo} alt="logo"/>
+      </a>
+      <nav className="navbar">
+        <a href="#home" className="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <Box><DarkModeIcon/></Box>
+      </nav>
     </header>
   );
 };
