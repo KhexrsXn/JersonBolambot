@@ -6,7 +6,6 @@
   position: sticky;
   top: 0;
 }
-
 .home.noDisplay{
   display: none;
   transition: 0.5s ease;
@@ -18,10 +17,41 @@
   justify-content: center;
   flex-direction: column;
   padding: 2rem 8%;
+  overflow: hidden;
 }
 .home-content .home-container {
   max-width: 50rem;
+  padding: 2rem;
+  overflow: hidden;
 }
+
+.logos .logos-slide h3 svg{
+  font-size: 4rem;
+  width: auto;
+  margin: 0 10px 0 10px;
+}
+
+.logos-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.logos-slide {
+  display: inline-flex;
+  animation: slide 15s linear infinite; /* Adjust the duration as needed */
+}
+.logos-slide h3 {
+  margin-right: 20px; /* Adjust the spacing between logos */
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 .home .profession-container {
   grid-area: profession-container;
@@ -29,7 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden !important;
+  /* overflow: hidden !important; */
 }
 .profession-container .profession-box {
   width: 550px;
@@ -38,9 +68,8 @@
   border-radius: 50%;
   /* background: red; */
   margin-top: -5rem;
-  animation: professioRotate 8s ease-out infinite;
+  animation: professioRotate 10s ease-out infinite;
   position: fixed;
-  /* transition: fadeInOut .5s ease-in-out !important; */
 }
 .profession-container .overlay {
   width: 100%;
@@ -109,6 +138,15 @@
   }
 }
 
+@keyframes infiniteSlide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 
 @media (max-width: 1024px) {
   .profession-container .profession-box {
@@ -129,6 +167,9 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+  }
+  .home-content h6 {
+    text-align: justify;
   }
   .home-container {
     display: flex;
@@ -183,5 +224,18 @@
   }
   .home .profession-box .profession:nth-child(4) {
     transform: rotate(180deg) translate(250px, -230px);
+  }
+}
+
+@media (max-width: 375px) {
+  .home-content .home-container {
+    max-width: 45rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .home-content .home-container {
+    max-width: 45rem;
+    padding: 1rem;
   }
 }

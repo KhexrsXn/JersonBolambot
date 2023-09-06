@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import About from "./About";
+// import About from "./About";
 import Header from "./Header";
 import HeroBanner from "./HeroBanner";
 // import MyServices from "./myservices";
@@ -13,7 +13,7 @@ function App() {
     <>
       <Header />
       <HeroBanner />
-      <About />
+      {/* <About /> */}
       {/* <MyServices /> */}
       {/* <Skills/>
       <Projects /> */}

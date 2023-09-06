@@ -16,10 +16,12 @@ import "../App.css";
 // import git from "../components/images/git.png";
 // import github from "../components/images/github.png";
 // import figma from "../components/images/figma.png";
-import webdev from "../components/images/webdev.png";
-import uiux from "../components/images/uiux.png";
-import marketing from "../components/images/marketing.png";
-import frontend from "../components/images/frontend.png";
+import { FaLaptopCode, FaCode, FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
+import {SiMui, SiDjango, SiSqlite, SiMysql} from "react-icons/si";
+import {BiLogoGit} from "react-icons/bi";
+import {DiJavascript} from "react-icons/di"
+import {CgFigma} from "react-icons/cg"
+import {SiWebflow} from "react-icons/si";
 
 const HeroBanner = () => {
   useEffect(() => {
@@ -29,10 +31,10 @@ const HeroBanner = () => {
       if (professionBox) {
         if (window.scrollY > 10) {
           professionBox.style.display = "none";
-          professionBox.style.animation = "fadeInOut 1s ease-in-out, professioRotate 8s ease-out infinite";
+          professionBox.style.animation = "fadeInOut 1s ease-in-out, professioRotate 10s ease-out infinite";
         } else {
           professionBox.style.display = "block";
-          professionBox.style.animation = "fadeInOut 1s ease-in-out, professioRotate 8s ease-out infinite";
+          professionBox.style.animation = "fadeInOut 1s ease-in-out, professioRotate 10s ease-out infinite";
         }
       }
     };
@@ -55,25 +57,56 @@ const HeroBanner = () => {
             development trends and technologies constantly improving my skills and
             staying ahead in the field.
           </h6>
-          <label>Tech Stack:</label>
+          <br/>
+          <h6><b>Tech Stack:</b></h6>
+          <div className="logos-container">
+            <div className="logos-slide">
+              <h3 style={{color:"#cc1100"}}><FaHtml5/></h3>
+              <h3 style={{color:"#264de4"}}><FaCss3Alt/></h3>
+              <h3 style={{color:"#e6b100"}}><DiJavascript/></h3>
+              <h3 style={{color:"#7311f6"}}><FaBootstrap/></h3>
+              <h3 style={{color:"#007fff"}}><SiMui/></h3>
+              <h3 style={{color:"#00d8ff"}}><FaReact/></h3>
+              <h3 style={{color:"#8ec454"}}><FaNodeJs/></h3>
+              <h3 style={{color:"#003e2b"}}><SiDjango/></h3>
+              <h3 style={{color:"#0f80cc"}}><SiSqlite/></h3>
+              <h3><SiMysql/></h3>
+              <h3><FaGithub/></h3>
+              <h3 style={{color:"#de4c36"}}><BiLogoGit/></h3>
+            </div>
+            <div className="logos-slide">
+              <h3 style={{color:"#cc1100"}}><FaHtml5/></h3>
+              <h3 style={{color:"#264de4"}}><FaCss3Alt/></h3>
+              <h3 style={{color:"#e6b100"}}><DiJavascript/></h3>
+              <h3 style={{color:"#7311f6"}}><FaBootstrap/></h3>
+              <h3 style={{color:"#007fff"}}><SiMui/></h3>
+              <h3 style={{color:"#00d8ff"}}><FaReact/></h3>
+              <h3 style={{color:"#8ec454"}}><FaNodeJs/></h3>
+              <h3 style={{color:"#003e2b"}}><SiDjango/></h3>
+              <h3 style={{color:"#0f80cc"}}><SiSqlite/></h3>
+              <h3><SiMysql/></h3>
+              <h3><FaGithub/></h3>
+              <h3 style={{color:"#de4c36"}}><BiLogoGit/></h3>
+            </div>
         </div>
+      </div>
       </div>
       <div className="profession-container">
         <div className="profession-box">
           <div className="profession" style={{ "--i": 0 }}>
-            <img src={webdev} alt="" />
+            <h1><FaLaptopCode/></h1>
             <h4>Front-End</h4>
           </div>
           <div className="profession" style={{ "--i": 1 }}>
-            <img src={uiux} alt="" />
+            <h1><FaCode/></h1>
             <h4>Back-End</h4>
           </div>
           <div className="profession" style={{ "--i": 2 }}>
-            <img src={frontend} alt="" />
+            <h1><CgFigma/></h1>
             <h4>Web Design</h4>
           </div>
           <div className="profession" style={{ "--i": 3 }}>
-            <img src={marketing} alt="" />
+            <h1><SiWebflow/></h1>
             <h4>Webflow</h4>
             <h4>Development</h4>
           </div>
