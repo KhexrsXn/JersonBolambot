@@ -20,7 +20,7 @@ const Header = () => {
     const handleScroll = () => {
       sections.forEach(sec => {
         const top = window.scrollY;
-        const offset = sec.offsetTop - 150;
+        const offset = sec.offsetTop - 100;
         const height = sec.offsetHeight;
         const id = sec.getAttribute('id');
 
@@ -55,8 +55,9 @@ const Header = () => {
       <nav className={`navbar ${isMenuOpen ? 'active animated-element' : 'animated-element'}`}>
         <a onClick={handleMenuClick} href="#home" className="active">Home</a>
         <a onClick={handleMenuClick} href="#about">About</a>
-        <a onClick={handleMenuClick} href="#contact">Services</a>
+        <a onClick={handleMenuClick} href="#myskills">Skills</a>
         <a onClick={handleMenuClick} href="#projects">Projects</a>
+        <a onClick={handleMenuClick} href="#faq">FAQ</a>
         <a onClick={handleMenuClick} href="#contact">Contact</a>
       </nav>
       <Box padding="0 1rem 0 2rem"><DarkModeIcon/></Box>

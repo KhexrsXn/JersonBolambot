@@ -84,16 +84,14 @@
     top: 100%;
     left: 0;
     width: 100%;
-    /* padding: 1rem 3%; */
     background: var(--white-color);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     display: none;
-    z-index: 1;
   }
   .navbar a{
     display: block;
     width: 100%;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     color: var(--dark-color);
   }
   .navbar a.active {

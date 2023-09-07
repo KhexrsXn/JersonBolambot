@@ -1,0 +1,9 @@
+.projects-container {
+    background: var(--white-color);
+    height: 100vh;
+    padding: 10rem 7% 2rem;
+    position: absolute;
+}
+.projects-container h1 {
+    text-align: center;
+}

@@ -38,21 +38,11 @@
 }
 .logos-slide {
   display: inline-flex;
-  animation: slide 15s linear infinite; /* Adjust the duration as needed */
+  animation: slide 15s linear infinite;
 }
 .logos-slide h3 {
-  margin-right: 20px; /* Adjust the spacing between logos */
+  margin-right: 20px;
 }
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-
 .home .profession-container {
   grid-area: profession-container;
   /* background: purple; */
@@ -143,6 +133,15 @@
     transform: translateX(0);
   }
   to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
     transform: translateX(-100%);
   }
 }

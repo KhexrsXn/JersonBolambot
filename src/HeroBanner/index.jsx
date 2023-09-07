@@ -17,11 +17,16 @@ import "../App.css";
 // import github from "../components/images/github.png";
 // import figma from "../components/images/figma.png";
 import { FaLaptopCode, FaCode, FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
-import {SiMui, SiDjango, SiSqlite, SiMysql} from "react-icons/si";
+import {SiMui, SiDjango, SiSqlite,} from "react-icons/si";
 import {BiLogoGit} from "react-icons/bi";
 import {DiJavascript} from "react-icons/di"
 import {CgFigma} from "react-icons/cg"
-import {SiWebflow} from "react-icons/si";
+import {SiWebflow,} from "react-icons/si";
+import python from "../components/images/python.png";
+import figma from "../components/images/figma.png";
+import mysql from "../components/images/mysql.png";
+import photoshop from "../components/images/photoshop.png";
+import canva from "../components/images/canva.png";
 
 const HeroBanner = () => {
   useEffect(() => {
@@ -29,7 +34,7 @@ const HeroBanner = () => {
       const professionBox = document.querySelector(".profession-box");
 
       if (professionBox) {
-        if (window.scrollY > 10) {
+        if (window.scrollY > 50) {
           professionBox.style.display = "none";
           professionBox.style.animation = "fadeInOut 1s ease-in-out, professioRotate 10s ease-out infinite";
         } else {
@@ -50,7 +55,7 @@ const HeroBanner = () => {
     <section id="home" className="home">
       <div className="home-content">
         <div className="home-container">
-          <h3>Hi! I'm Jerson</h3>
+          <h3>Hi, I'm Jerson</h3>
           <h1><b style={{ color: "var(--main-color)" }}>Full Stack</b> Developer</h1>
           <h6>
             I'am passionate about learning and keeping up with the latest web
@@ -68,11 +73,15 @@ const HeroBanner = () => {
               <h3 style={{color:"#007fff"}}><SiMui/></h3>
               <h3 style={{color:"#00d8ff"}}><FaReact/></h3>
               <h3 style={{color:"#8ec454"}}><FaNodeJs/></h3>
+              <h3><img style={{width:"25px", height:"25px",}} src={python} alt=""/></h3>
               <h3 style={{color:"#003e2b"}}><SiDjango/></h3>
               <h3 style={{color:"#0f80cc"}}><SiSqlite/></h3>
-              <h3><SiMysql/></h3>
+              <h3><img style={{width:"30px", height:"30px", objectFit:"cover"}} src={mysql} alt=""/></h3>
               <h3><FaGithub/></h3>
               <h3 style={{color:"#de4c36"}}><BiLogoGit/></h3>
+              <h3><img style={{width:"25px", height:"25px",objectFit:"cover"}} src={figma} alt=""/></h3>
+              <h3><img style={{width:"25px", height:"25px", objectFit:"cover"}} src={canva} alt=""/></h3>
+              <h3><img style={{width:"25px", height:"25px", objectFit:"cover"}} src={photoshop} alt=""/></h3>
             </div>
             <div className="logos-slide">
               <h3 style={{color:"#cc1100"}}><FaHtml5/></h3>
@@ -82,11 +91,15 @@ const HeroBanner = () => {
               <h3 style={{color:"#007fff"}}><SiMui/></h3>
               <h3 style={{color:"#00d8ff"}}><FaReact/></h3>
               <h3 style={{color:"#8ec454"}}><FaNodeJs/></h3>
+              <h3><img style={{width:"25px", height:"25px",}} src={python} alt=""/></h3>
               <h3 style={{color:"#003e2b"}}><SiDjango/></h3>
               <h3 style={{color:"#0f80cc"}}><SiSqlite/></h3>
-              <h3><SiMysql/></h3>
+              <h3><img style={{width:"30px", height:"30px", objectFit:"cover"}} src={mysql} alt=""/></h3>
               <h3><FaGithub/></h3>
               <h3 style={{color:"#de4c36"}}><BiLogoGit/></h3>
+              <h3><img style={{width:"25px", height:"25px",objectFit:"cover"}} src={figma} alt=""/></h3>
+              <h3><img style={{width:"25px", height:"25px", objectFit:"cover"}} src={canva} alt=""/></h3>
+              <h3><img style={{width:"25px", height:"25px", objectFit:"cover"}} src={photoshop} alt=""/></h3>
             </div>
         </div>
       </div>
