@@ -1,21 +1,6 @@
 import React, { useEffect } from "react";
-// import { Box } from "@mui/material";
 import "../HeroBanner/style.css";
 import "../App.css";
-// import html5 from "../components/images/html5.png";
-// import css3 from "../components/images/css3.png";
-// import javascript6 from "../components/images/JavaScript6.png";
-// import bootstrap from "../components/images/bootstrap.png";
-// import materialUI from "../components/images/material-ui.png";
-// import react from "../components/images/react.png";
-// import nodejs from "../components/images/nodejs.png";
-// import django from "../components/images/django.png";
-// import php from "../components/images/php.png";
-// import mysql from "../components/images/mysql.png";
-// import SQLite from "../components/images/SQLite.png";
-// import git from "../components/images/git.png";
-// import github from "../components/images/github.png";
-// import figma from "../components/images/figma.png";
 import { FaLaptopCode, FaCode, FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
 import {SiMui, SiDjango, SiSqlite,} from "react-icons/si";
 import {BiLogoGit} from "react-icons/bi";
@@ -68,7 +53,7 @@ const HeroBanner = () => {
             <div className="logos-slide">
               <h3 style={{color:"#cc1100"}}><FaHtml5/></h3>
               <h3 style={{color:"#264de4"}}><FaCss3Alt/></h3>
-              <h3 style={{color:"#e6b100"}}><DiJavascript/></h3>
+              <h3 style={{color:"#e6b100", }}><DiJavascript/></h3>
               <h3 style={{color:"#7311f6"}}><FaBootstrap/></h3>
               <h3 style={{color:"#007fff"}}><SiMui/></h3>
               <h3 style={{color:"#00d8ff"}}><FaReact/></h3>
@@ -76,17 +61,17 @@ const HeroBanner = () => {
               <h3><img style={{width:"25px", height:"25px",}} src={python} alt=""/></h3>
               <h3 style={{color:"#003e2b"}}><SiDjango/></h3>
               <h3 style={{color:"#0f80cc"}}><SiSqlite/></h3>
-              <h3><img style={{width:"30px", height:"30px", objectFit:"cover"}} src={mysql} alt=""/></h3>
+              <h3><img style={{width:"35px", height:"30px", }} src={mysql} alt=""/></h3>
               <h3><FaGithub/></h3>
               <h3 style={{color:"#de4c36"}}><BiLogoGit/></h3>
-              <h3><img style={{width:"25px", height:"25px",objectFit:"cover"}} src={figma} alt=""/></h3>
-              <h3><img style={{width:"25px", height:"25px", objectFit:"cover"}} src={canva} alt=""/></h3>
-              <h3><img style={{width:"25px", height:"25px", objectFit:"cover"}} src={photoshop} alt=""/></h3>
+              <h3><img style={{width:"20px", height:"20px",}} src={figma} alt=""/></h3>
+              <h3><img style={{width:"20px", height:"20px", objectFit:"cover"}} src={canva} alt=""/></h3>
+              <h3><img style={{width:"20px", height:"20px", objectFit:"cover"}} src={photoshop} alt=""/></h3>
             </div>
             <div className="logos-slide">
               <h3 style={{color:"#cc1100"}}><FaHtml5/></h3>
               <h3 style={{color:"#264de4"}}><FaCss3Alt/></h3>
-              <h3 style={{color:"#e6b100"}}><DiJavascript/></h3>
+              <h3 style={{color:"#e6b100", }}><DiJavascript/></h3>
               <h3 style={{color:"#7311f6"}}><FaBootstrap/></h3>
               <h3 style={{color:"#007fff"}}><SiMui/></h3>
               <h3 style={{color:"#00d8ff"}}><FaReact/></h3>
@@ -94,12 +79,12 @@ const HeroBanner = () => {
               <h3><img style={{width:"25px", height:"25px",}} src={python} alt=""/></h3>
               <h3 style={{color:"#003e2b"}}><SiDjango/></h3>
               <h3 style={{color:"#0f80cc"}}><SiSqlite/></h3>
-              <h3><img style={{width:"30px", height:"30px", objectFit:"cover"}} src={mysql} alt=""/></h3>
+              <h3><img style={{width:"35px", height:"30px", }} src={mysql} alt=""/></h3>
               <h3><FaGithub/></h3>
               <h3 style={{color:"#de4c36"}}><BiLogoGit/></h3>
-              <h3><img style={{width:"25px", height:"25px",objectFit:"cover"}} src={figma} alt=""/></h3>
-              <h3><img style={{width:"25px", height:"25px", objectFit:"cover"}} src={canva} alt=""/></h3>
-              <h3><img style={{width:"25px", height:"25px", objectFit:"cover"}} src={photoshop} alt=""/></h3>
+              <h3><img style={{width:"20px", height:"20px",}} src={figma} alt=""/></h3>
+              <h3><img style={{width:"20px", height:"20px", objectFit:"cover"}} src={canva} alt=""/></h3>
+              <h3><img style={{width:"20px", height:"20px", objectFit:"cover"}} src={photoshop} alt=""/></h3>
             </div>
         </div>
       </div>

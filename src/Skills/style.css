@@ -1,42 +1,75 @@
 .skillsContainer {
-    background: var(--white-color);
-    height: 100vh;
-    width: 100vw;
-    padding: 10rem 7% 2rem;
-    position: absolute;
-    z-index: 99;
+    padding: 10rem 7% ;
     display: block;
     align-items: center;
     justify-content: center;
-    /* padding: 10rem 8%; */
 }
 .skills-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'left right';
-    /* place-items: center; */
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0 0 0;
 }
-
-
-/* FOR lEFT CONTAINER */
-.leftSkills {
-    grid-area: left;
-    /* background: blue; */
-}
-
-
-/* FOR RIGTH CONTAINER */
-.rightSkills {
-    grid-area: right;
-    /* background: red; */
+.progress-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
+.progress-container .progress {
+    background: #A591C6;
+    width: 300px;
+    margin: 0 0 0 5rem ;
+    display: flex;
+    align-items: center;
+}
+
+ .progress  .MuiTypography-root {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: -18px 0 0 -25px;
+    background: var(--main-color);
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--white-color);
+} 
+
+
 .youngIT img {
-    width: 500px;
+    width: 400px;
     object-fit: cover;
     -webkit-box-shadow: 0px 0px 10px 3px rgba(66, 68, 90, 1);
-  -moz-box-shadow: 0px 0px 10px 3px rgba(66, 68, 90, 1);
-  box-shadow: 0px 0px 10px 3px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 10px 3px rgba(66, 68, 90, 1);
+}
+
+.progress-figma {
+    padding: 0 2rem 0 5rem;
+    width: 50%;
+    height: 30px;
+    background: var(--main-color) !important;
+}
+.progress-canva {
+    padding: 0 2rem 0 5rem;
+    width: 65%;
+    height: 30px;
+    background: var(--main-color) !important;
+}
+.progress-photoshop {
+    padding: 0 2rem 0 5rem;
+    width: 80%;
+    height: 30px;
+    background: var(--main-color) !important;
+}
+@media (max-width: 768px) {
+    .skills-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'left' 'right';
+    }
+    .youngIT img {
+        display: none;
+    }
 }

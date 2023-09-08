@@ -3,8 +3,6 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'leftContainer rightContainer';
   place-items: center;
-  background: var(--white-color);
-  position: relative;
 }
 .leftContainer {
   grid-area: leftContainer;
@@ -62,5 +60,13 @@
   .rightContainer {
     padding-right: 0;
   }
-  
+  .image {
+    width: 300px;
+    height: 300px;
+  }
 }
+@media (max-width: 425px) {
+  .about-group h6 {
+    font-size: 1rem;
+  }
+} 

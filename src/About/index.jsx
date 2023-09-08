@@ -38,8 +38,8 @@ const About = () => {
           <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column">
             <h2><FaUserGraduate/></h2>
             <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column">
-              <Typography variant='h6'>1+ years</Typography>
-              <Typography variant='h6'>Front-end Developer</Typography>
+              <Typography variant='h6'>Degree Holder</Typography>
+              <Typography variant='h6'>BS Information Technology</Typography>
             </Box>
           </Box>
         </div>

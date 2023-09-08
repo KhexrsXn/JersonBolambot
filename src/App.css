@@ -25,14 +25,11 @@ html {
 }
 
 body {
-  color: var(--text-color);
   background: var(--bg-color);
 }
 
 section {
   height: 100vh;
-  width: 100vw;
-  /* padding: 10rem 7% 2rem; */
 }
 
 html h1 {

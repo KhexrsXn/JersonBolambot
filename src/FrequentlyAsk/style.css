@@ -1,0 +1,23 @@
+.faqContainer {
+    display: block;
+    flex-direction: column;
+    background-color: burlywood;
+    padding: 10rem 7% 2rem;
+}
+.faq-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .faq-content {
+        padding: 0 ;
+    }
+}

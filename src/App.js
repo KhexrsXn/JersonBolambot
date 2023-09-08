@@ -3,8 +3,11 @@ import "./App.css";
 import About from "./About";
 import Header from "./Header";
 import HeroBanner from "./HeroBanner";
-import Projects from "./MyProject";
 import Skills from "./Skills";
+import Projects from "./MyProject";
+import FAQ from "./FrequentlyAsk";
+import GetInTouch from "./GetinTouch";
+import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
@@ -12,9 +15,12 @@ function App() {
     <div className="app">
       <Header />
       <HeroBanner />
-      <About />
+       <About />
       <Skills/> 
-      <Projects />
+     <Projects />
+       <FAQ />
+      <GetInTouch />
+      <Footer />
     </div>
   );
 }

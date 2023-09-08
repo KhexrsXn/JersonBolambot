@@ -1,9 +1,27 @@
 .projects-container {
-    background: var(--white-color);
+    background: #2c2c2c;
     height: 100vh;
-    padding: 10rem 7% 2rem;
-    position: absolute;
+    padding: 11rem 7% 2rem;
+    position: relative;
+    z-index: 99;
 }
 .projects-container h1 {
     text-align: center;
+}
+.projects-container h1 {
+    color: var(--white-color);
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.button-container button {
+    margin: 4rem 0 0 0;
+    padding: 1rem 2rem;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--white-color);
 }

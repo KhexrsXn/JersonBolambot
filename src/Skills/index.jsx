@@ -1,6 +1,6 @@
 import React from "react";
 import "../Skills/style.css";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
 import {SiMui, SiDjango, SiSqlite,} from "react-icons/si";
 import {BiLogoGit} from "react-icons/bi";
@@ -13,24 +13,90 @@ import youngIT from "../components/images/youngIT.png";
 
 const Skills = () => {
   return (
-    <section id="myskills">
-      <div className="skillsContainer">
-        <Box display="flex" justifyContent="center">
-          <h1>My Skills</h1>
-        </Box>
-        <Box marginTop="5rem" className="skills-content">
-          <div className="leftSkills">
-          <Box marginBottom="1.5rem">
+    <section id="myskills" className="skillsContainer">
+      <Box display="flex" justifyContent="center">
+        <h1>My Skills</h1>
+      </Box>
+      <Box className="skills-content">
+        <div className="leftSkills">
+          <Box>
             <ul>
-              <li><h6><b>UX/UI</b></h6></li>
+              <li>
+                <h6>
+                  <b>UX/UI</b>
+                </h6>
+              </li>
               <ul>
-                <li><h6><img style={{width:"20px", height:"20px",objectFit:"contain", margin:"5px 0 5px 0"}} src={figma} alt=""/>&nbsp;&nbsp;&nbsp;Figma</h6></li>
-                <li><h6><img style={{width:"20px", height:"20px",objectFit:"contain", margin:"5px 0 5px 0"}} src={canva} alt=""/>&nbsp;&nbsp;&nbsp;Canva</h6></li>
-                <li><h6><img style={{width:"20px", height:"20px",objectFit:"contain", margin:"5px 0 5px 0"}} src={photoshop} alt=""/>&nbsp;&nbsp;&nbsp;Adobe Photoshop</h6></li>
+                <li>
+                  <Box className="progress-container">
+                    <Box display="flex" alignItems="center" >
+                      <img
+                        style={{
+                          width: "20px",
+                          height: "20px",
+                          objectFit: "contain",
+                          margin: "5px 10px 5px 0",
+                        }}
+                        src={figma}
+                        alt=""
+                      />
+                      <Typography variant="h5">Figma</Typography>
+                    </Box>
+                    <div className="progress">
+                    <div className="progress-figma">
+                    </div>
+                    <div className="figma"><Typography variant="h6">50%</Typography></div>
+                    </div>
+                  </Box>
+                </li>
+                <li>
+                  <Box className="progress-container">
+                    <Box display="flex" alignItems="center" >
+                      <img
+                        style={{
+                          width: "20px",
+                          height: "20px",
+                          objectFit: "contain",
+                          margin: "5px 10px 5px 0",
+                        }}
+                        src={canva}
+                        alt=""
+                      />
+                      <Typography variant="h5">Canva</Typography>
+                    </Box>
+                    <div className="progress">
+                    <div className="progress-canva">
+                    </div>
+                    <div className="figma"><Typography variant="h6">65%</Typography></div>
+                    </div>
+                  </Box>
+                </li>
+                <li>
+                  <Box className="progress-container">
+                    <Box display="flex" alignItems="center" >
+                      <img
+                        style={{
+                          width: "20px",
+                          height: "20px",
+                          objectFit: "contain",
+                          margin: "5px 10px 5px 0",
+                        }}
+                        src={photoshop}
+                        alt=""
+                      />
+                      <Typography variant="h5">Photoshop</Typography>
+                    </Box>
+                    <div className="progress">
+                    <div className="progress-photoshop">
+                    </div>
+                    <div className="figma"><Typography variant="h6">80%</Typography></div>
+                    </div>
+                  </Box>
+                </li>
               </ul>
             </ul>
-            </Box>
-            <Box marginBottom="1.5rem">
+          </Box>
+          <Box marginBottom="1.5rem">
             <ul>
               <li><h6><b>Front-end Development</b></h6></li>
               <ul>
@@ -43,7 +109,7 @@ const Skills = () => {
               </ul>
             </ul>
             </Box>
-            <Box marginBottom="1.5rem">
+          <Box marginBottom="1.5rem">
             <ul>
               <li><h6><b>Back-end Development</b></h6></li>
               <ul>
@@ -52,7 +118,7 @@ const Skills = () => {
               </ul>
             </ul>
             </Box>
-            <Box marginBottom="1.5rem">
+          <Box marginBottom="1.5rem">
             <ul>
               <li><h6><b>Database</b></h6></li>
               <ul>
@@ -61,7 +127,7 @@ const Skills = () => {
               </ul>
             </ul>
             </Box>
-            <Box marginBottom="1.5rem">
+          <Box marginBottom="1.5rem">
             <ul>
               <li><h6><b>Version Control</b></h6></li>
               <ul>
@@ -70,15 +136,14 @@ const Skills = () => {
               </ul>
             </ul>
             </Box>
-          </div>
-          <div className="rightSkills">
-            <Box className="youngIT">
-              <img src={youngIT} alt=""/>
-            </Box>
-          </div>
-        </Box>
-        <div></div>
-      </div>
+        </div>
+        <div className="rightSkills">
+          <Box className="youngIT">
+            <img src={youngIT} alt="" />
+          </Box>
+        </div>
+      </Box>
+      <div></div>
     </section>
   );
 };
