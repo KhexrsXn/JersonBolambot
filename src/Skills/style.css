@@ -1,5 +1,5 @@
 .skillsContainer {
-    padding: 10rem 7% ;
+    padding: 7rem 7%;
     display: block;
     align-items: center;
     justify-content: center;
@@ -7,12 +7,12 @@
 .skills-content {
     display: flex;
     justify-content: space-between;
-    margin: 5rem 0 0 0;
 }
 .progress-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 2px;
 }
 .progress-container .progress {
     background: #A591C6;
@@ -20,13 +20,14 @@
     margin: 0 0 0 5rem ;
     display: flex;
     align-items: center;
+    height: 7px;
 }
 
  .progress  .MuiTypography-root {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
-    margin: -18px 0 0 -25px;
+    margin: -13px 0 0 -25px;
     background: var(--main-color);
     float: right;
     display: flex;
@@ -35,7 +36,10 @@
     position: absolute;
     color: var(--white-color);
 } 
-
+.skills-content .leftSkills ul li {
+    list-style: none;
+    margin: 0 0 0 -15px;
+}
 
 .youngIT img {
     width: 400px;
@@ -46,21 +50,78 @@
 }
 
 .progress-figma {
-    padding: 0 2rem 0 5rem;
     width: 50%;
-    height: 30px;
-    background: var(--main-color) !important;
+    height: 10px;
+    background: var(--main-color) ;
 }
 .progress-canva {
-    padding: 0 2rem 0 5rem;
     width: 65%;
-    height: 30px;
+    height: 10px;
     background: var(--main-color) !important;
 }
 .progress-photoshop {
-    padding: 0 2rem 0 5rem;
     width: 80%;
-    height: 30px;
+    height: 10px;
+    background: var(--main-color) !important;
+}
+.progress-html {
+    width: 95%;
+    height: 10px;
+    background: var(--main-color) !important;
+}
+.progress-css {
+    width: 90%;
+    height: 10px;
+    background: var(--main-color) !important;
+}
+.progress-javascript {
+    width: 85%;
+    height: 10px;
+    background: var(--main-color) !important;
+}
+.progress-bootstrap {
+    width: 70%;
+    height: 10px;
+    background: var(--main-color) !important;
+}
+.progress-mui {
+    width: 70%;
+    height: 10px;
+    background: var(--main-color) !important;
+}
+.progress-react {
+    width: 75%;
+    height: 10px;
+    background: var(--main-color) !important;
+}
+.progress-nodejs {
+    width: 70%;
+    height: 10px;
+    background: var(--main-color) !important;
+}
+.progress-django {
+    width: 75%;
+    height: 10px;
+    background: var(--main-color) !important;
+}
+.progress-mysql {
+    width: 90%;
+    height: 10px;
+    background: var(--main-color) !important;
+}
+.progress-sqlite {
+    width: 90%;
+    height: 10px;
+    background: var(--main-color) !important;
+}
+.progress-git {
+    width: 90%;
+    height: 10px;
+    background: var(--main-color) !important;
+}
+.progress-github {
+    width: 90%;
+    height: 10px;
     background: var(--main-color) !important;
 }
 @media (max-width: 768px) {
@@ -71,5 +132,10 @@
     }
     .youngIT img {
         display: none;
+    }
+}
+@media (max-width: 425px) {
+    .progress-container .progress {
+        width: 150px;
     }
 }
