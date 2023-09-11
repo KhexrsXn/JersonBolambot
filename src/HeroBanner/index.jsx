@@ -12,6 +12,7 @@ import figma from "../components/images/figma.png";
 import mysql from "../components/images/mysql.png";
 import photoshop from "../components/images/photoshop.png";
 import canva from "../components/images/canva.png";
+import IMG01 from "../components/images/IMG01.png";
 
 const HeroBanner = () => {
   useEffect(() => {
@@ -110,6 +111,9 @@ const HeroBanner = () => {
           </div>
         </div>
         <div className="overlay"></div>
+        <div className="hero-image">
+        <img src={IMG01} alt=""/>
+        </div>
       </div>
     </section>
   );

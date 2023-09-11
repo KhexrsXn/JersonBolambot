@@ -97,6 +97,15 @@
   color: var(--main-color) !important;
 }
 
+.hero-image{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.hero-image img {
+  width: 400px;
+}
+
 @keyframes professioRotate {
   0%, 20% {
       transform: rotate(0deg);
@@ -146,6 +155,9 @@
   .profession-container .profession-box {
     margin-left: 20rem;
   }
+  .hero-image img {
+    width: 350px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -191,6 +203,9 @@
   .profession-container .profession-box {
     margin-top: 35rem;
     margin-left: 0;
+  }
+  .hero-image img {
+    display: none;
   }
 }
 @media (max-width: 390px) {

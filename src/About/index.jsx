@@ -4,7 +4,8 @@ import { Box, Typography } from '@mui/material'
 import {GiTrophy} from "react-icons/gi"
 import {CgWebsite} from "react-icons/cg"
 import {FaUserGraduate} from "react-icons/fa"
-import {FcBusinessman} from "react-icons/fc"
+// import {FcBusinessman} from "react-icons/fc"
+import IMG02 from "../components/images/IMG02.png"
 
 const About = () => {
 
@@ -12,7 +13,7 @@ const About = () => {
     <section id="about" className="about-container">
       <div className="leftContainer">
         <Box className="image">
-          <div><FcBusinessman/></div>
+          <img src={IMG02} alt=''/>
         </Box>
       </div>
       <div className="rightContainer">
