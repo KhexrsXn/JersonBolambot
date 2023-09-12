@@ -4,7 +4,7 @@ import "../MyProject/style.css"
 const Projects = () => {
   return (
     <section id='projects' className='projects-container'>
-      <h1>My Projects</h1>
+      <h1>My Portfolio</h1>
         <div className='button-container'>
           <button>ALL</button>
           <button>Front-end</button>

@@ -1,18 +1,16 @@
 .skillsContainer {
     padding: 7rem 7%;
     display: block;
-    align-items: center;
-    justify-content: center;
-}
-.skills-content {
-    display: flex;
+    align-items: space-between;
     justify-content: space-between;
+    flex-direction: column;
 }
+
 .progress-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2px;
+    padding: 3px;
 }
 .progress-container .progress {
     background: #A591C6;
@@ -36,17 +34,20 @@
     position: absolute;
     color: var(--white-color);
 } 
-.skills-content .leftSkills ul li {
+.leftSkills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+ .leftSkills ul li {
     list-style: none;
     margin: 0 0 0 -15px;
 }
 
 .youngIT img {
-    width: 400px;
+    width: 550px;
     object-fit: cover;
-    -webkit-box-shadow: 0px 0px 10px 3px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 10px 3px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 10px 3px rgba(66, 68, 90, 1);
 }
 
 .progress-figma {
@@ -124,18 +125,32 @@
     height: 10px;
     background: var(--main-color) !important;
 }
-@media (max-width: 768px) {
-    .skills-content {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 'left' 'right';
+
+@media (max-width: 1024px) {
+    .youngIT img {
+        width: 400px;
     }
+}
+@media (max-width: 768px) {
     .youngIT img {
         display: none;
+    }
+    .progress-container .progress {
+        width: 455px;
     }
 }
 @media (max-width: 425px) {
     .progress-container .progress {
+        width: 190px;
+    }
+}
+@media (max-width: 375px) {
+    .progress-container .progress {
         width: 150px;
+    }
+}
+@media (max-width: 320px) {
+    .progress-container .progress {
+        width: 100px;
     }
 }

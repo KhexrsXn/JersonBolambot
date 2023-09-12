@@ -33,7 +33,7 @@ const Header = () => {
       });
 
       const header = document.querySelector(".header");
-      header.classList.toggle("sticky", window.scrollY > 20);
+      header.classList.toggle("sticky", window.scrollY >100);
     };
 
     // Attach the scroll event listener when the component mounts
@@ -56,8 +56,8 @@ const Header = () => {
         <a onClick={handleMenuClick} href="#home" className="active">Home</a>
         <a onClick={handleMenuClick} href="#about">About</a>
         <a onClick={handleMenuClick} href="#myskills">Skills</a>
-        <a onClick={handleMenuClick} href="#projects">Projects</a>
-        <a onClick={handleMenuClick} href="#faq">FAQ</a>
+        <a onClick={handleMenuClick} href="#projects">Portfolio</a>
+        {/* <a onClick={handleMenuClick} href="#faq">FAQ</a> */}
         <a onClick={handleMenuClick} href="#contact">Contact</a>
       </nav>
       <Box padding="0 1rem 0 2rem"><DarkModeIcon/></Box>

@@ -67,7 +67,7 @@ const HeroBanner = () => {
               <h3 style={{color:"#de4c36"}}><BiLogoGit/></h3>
               <h3><img style={{width:"20px", height:"20px",}} src={figma} alt=""/></h3>
               <h3><img style={{width:"20px", height:"20px", objectFit:"cover"}} src={canva} alt=""/></h3>
-              <h3><img style={{width:"20px", height:"20px", objectFit:"cover"}} src={photoshop} alt=""/></h3>
+              <h3><img style={{width:"24px", height:"24px", objectFit:"cover"}} src={photoshop} alt=""/></h3>
             </div>
             <div className="logos-slide">
               <h3 style={{color:"#cc1100"}}><FaHtml5/></h3>
@@ -85,7 +85,7 @@ const HeroBanner = () => {
               <h3 style={{color:"#de4c36"}}><BiLogoGit/></h3>
               <h3><img style={{width:"20px", height:"20px",}} src={figma} alt=""/></h3>
               <h3><img style={{width:"20px", height:"20px", objectFit:"cover"}} src={canva} alt=""/></h3>
-              <h3><img style={{width:"20px", height:"20px", objectFit:"cover"}} src={photoshop} alt=""/></h3>
+              <h3><img style={{width:"24px", height:"24px", objectFit:"cover"}} src={photoshop} alt=""/></h3>
             </div>
         </div>
       </div>

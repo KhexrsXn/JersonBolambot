@@ -71,7 +71,7 @@
   transform-origin: 300px;
   left: 0;
   top: 40%;
-  background: var(--bg-color);
+  background: var(--bg-color1);
   padding: 13px 15px;
 }
 
@@ -92,18 +92,13 @@
   margin-left: -1rem;
 }
 
- .profession h4,
- .profession h1 {
-  color: var(--main-color) !important;
-}
-
 .hero-image{
   position: absolute;
   right: 0;
   bottom: 0;
 }
 .hero-image img {
-  width: 400px;
+  width: 550px;
 }
 
 @keyframes professioRotate {
@@ -150,13 +145,18 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .hero-image img {
+    width: 450px;
+  }
+}
 
 @media (max-width: 1024px) {
   .profession-container .profession-box {
     margin-left: 20rem;
   }
   .hero-image img {
-    width: 350px;
+    width: 370px;
   }
 }
 
@@ -236,14 +236,19 @@
 
 @media (max-width: 375px) {
   .home-content .home-container {
-    max-width: 45rem;
-    padding: 1rem;
+    max-width: 40rem !important;
+    /* padding: 1rem; */
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 425px) {
   .home-content .home-container {
     max-width: 45rem;
-    padding: 1rem;
   }
+}
+
+@media (max-width: 425px) {
+  .home-content .home-container {
+    max-width: 45rem;
+  } 
 }

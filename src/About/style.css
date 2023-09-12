@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'leftContainer rightContainer';
   place-items: center;
+  background: var(--bg-color2);
 }
 .leftContainer {
   grid-area: leftContainer;
@@ -58,12 +59,16 @@
     align-items: center;
     flex-direction: column;
   }
+  .leftContainer .image{
+    margin-top: 10rem;
+  }
   .rightContainer {
     padding-right: 0;
+    
   }
   .image {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
   }
 }
 @media (max-width: 425px) {

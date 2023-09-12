@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 4%;
+  padding: 2rem 4%;
   background: transparent;
   display: flex;
   align-items: center;
@@ -97,17 +97,17 @@
   .navbar a.active {
     color: var(--main-color);
   }
-  .header svg {
+  /* .header svg {
     color: var(--dark-color);
-  }
+  } */
   .navbar.active {
     display: block;
     padding: 1rem 3%;
   }
-  .navbar a:nth-child(1),
+  /* .navbar a:nth-child(1),
   .navbar a:nth-child(2) {
     color: var(--dark-color);
-  } 
+  }  */
   .navbar a::before {
     display: none;
   }

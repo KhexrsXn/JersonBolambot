@@ -11,7 +11,8 @@
 }
 
 :root {
-  --bg-color: #ffffff;
+  --bg-color1: #212121;
+  --bg-color2: #2c2c2c;
   --dark-color: #000;
   --white-color: #fff;
   --main-color: #613DC1;
@@ -24,12 +25,14 @@ html {
   overflow-x: hidden;
 }
 
-body {
-  background: var(--bg-color);
-}
+ body {
+  background: var(--bg-color1);
+} 
 
 section {
+  background: var(--bg-color1);
   height: 100vh;
+  color: var(--white-color);
 }
 
 html h1 {

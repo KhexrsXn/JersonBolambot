@@ -1,4 +1,16 @@
 .footer-container {
-    height: 5vh;
+    /* height: 30vh; */
     background: var(--main-color);
+}
+.footer-container .footer-content {
+    display: flex;
+    gap: 2rem;
+}
+.footer-content a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+.footer-content a:hover {
+    text-decoration: 2px underline;
+    transition: .5s ease-in-out;
 }
