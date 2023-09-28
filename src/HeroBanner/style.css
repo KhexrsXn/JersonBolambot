@@ -237,13 +237,14 @@
 @media (max-width: 375px) {
   .home-content .home-container {
     max-width: 40rem !important;
-    /* padding: 1rem; */
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 414px) {
   .home-content .home-container {
-    max-width: 45rem;
+    max-width: 35rem;
+    padding: 0 1.5rem;
+    /* background: yellow; */
   }
 }
 

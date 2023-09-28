@@ -11,17 +11,27 @@
 .projects-container h1 {
     color: var(--white-color);
 }
-.button-container {
+.tab-buttons {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    padding: 2rem;
 }
-.button-container button {
-    margin: 4rem 0 0 0;
+.tab-buttons button {
     padding: 1rem 2rem;
-    font-size: 12px;
-    font-weight: 500;
     border-radius: 5px;
     background: var(--main-color);
+    font-size: 16px;
     color: var(--white-color);
+    font-weight: 500;
+    transition: .3s ease;
+}
+.tab-buttons button:hover {
+    background: var(--hover-color);
+}
+.tab-content {
+    background: yellowgreen;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
 }

@@ -16,6 +16,7 @@
   --dark-color: #000;
   --white-color: #fff;
   --main-color: #613DC1;
+  --hover-color: #442892;
   --shadow-color: rgba(0,0,0,0.2);
   --secondary-color: maroon;
 }
@@ -66,7 +67,27 @@ html p {
   font: 400;
 }
 
+/* for scroll bar */
+::-webkit-scrollbar{
+  width: 3px;
+  height: 3px;
+}
 
+/* for track */ 
+::-webkit-scrollbar-track{
+  background: var(--bg-color2);
+}
+
+/* for handle */
+::-webkit-scrollbar-thumb{
+  background: var(--bg-color1);
+}
+
+
+/* for handle hover */
+::-webkit-scrollbar-thumb:hover{
+  background: var(--main-color);
+}
 
 @media (max-width: 1024px) {
   html {
