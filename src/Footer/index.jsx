@@ -5,7 +5,7 @@ import { Box, Typography } from '@mui/material'
 const Footer = () => {
   return (
     <footer className='footer-container'>
-      <Box display="flex" justifyContent="center" alignItems="center" padding="3rem">
+      <Box display="flex" justifyContent="center" alignItems="center" padding="2rem 0 1rem 0">
       <nav className='footer-content'>
         <a href="#home" className="active"><h5>Home</h5></a>
         <a href="#about"><h5>About</h5></a>
@@ -16,7 +16,7 @@ const Footer = () => {
       </nav>
       </Box>
       <hr/>
-      <Box display="flex" justifyContent="center" alignItems="center" padding="1.5rem">
+      <Box display="flex" justifyContent="center" alignItems="center">
         <Typography variant='h6' color="#fff">
           2023 JERSON BOLAMBOT &copy; All Rights Reserved
         </Typography>

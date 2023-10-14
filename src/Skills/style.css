@@ -1,5 +1,5 @@
 .skillsContainer {
-    padding: 7rem 7%;
+    padding: 7rem 4%;
     display: block;
     align-items: space-between;
     justify-content: space-between;
@@ -38,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
  .leftSkills ul li {
     list-style: none;
@@ -61,7 +61,7 @@
     background: var(--main-color) !important;
 }
 .progress-photoshop {
-    width: 80%;
+    width: 60%;
     height: 10px;
     background: var(--main-color) !important;
 }

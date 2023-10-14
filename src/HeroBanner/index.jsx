@@ -41,7 +41,7 @@ const HeroBanner = () => {
     <section id="home" className="home">
       <div className="home-content">
         <div className="home-container">
-          <h3>Hi, I'm Jerson</h3>
+          <h3>Hi! I'm Jerson</h3>
           <h1><b style={{ color: "var(--main-color)" }}>Full Stack</b> Developer</h1>
           <h6>
             I'am passionate about learning and keeping up with the latest web
@@ -49,7 +49,7 @@ const HeroBanner = () => {
             staying ahead in the field.
           </h6>
           <br/>
-          <h6><b>Tech Stack:</b></h6>
+          <h6><b>Tech Stacks:</b></h6>
           <div className="logos-container">
             <div className="logos-slide">
               <h3 style={{color:"#cc1100"}}><FaHtml5/></h3>

@@ -15,13 +15,13 @@ import { DiJavascript } from "react-icons/di";
 import figma from "../components/images/figma.png";
 import mysql from "../components/images/mysql.png";
 import photoshop from "../components/images/photoshop.png";
-import canva from "../components/images/canva.png";
+// import canva from "../components/images/canva.png";
 import youngIT from "../components/images/youngIT.png";
 
 const Skills = () => {
   return (
     <section id="myskills" className="skillsContainer">
-      <Box display="flex" justifyContent="center" margin="1rem 0 0 0" >
+      <Box display="flex" justifyContent="center">
         <h1>My Skills</h1>
       </Box>
         <div className="leftSkills">
@@ -29,9 +29,9 @@ const Skills = () => {
           <Box>
             <ul>
               <li>
-                <h6>
+                <Typography variant="h6">
                   <b>UX/UI</b>
-                </h6>
+                </Typography>
               </li>
               <ul>
                 <li>
@@ -57,7 +57,7 @@ const Skills = () => {
                     </div>
                   </Box>
                 </li>
-                <li>
+                {/* <li>
                   <Box className="progress-container">
                     <Box display="flex" alignItems="center">
                       <img
@@ -79,7 +79,7 @@ const Skills = () => {
                       </div>
                     </div>
                   </Box>
-                </li>
+                </li> */}
                 <li>
                   <Box className="progress-container">
                     <Box display="flex" alignItems="center">
@@ -98,7 +98,7 @@ const Skills = () => {
                     <div className="progress">
                       <div className="progress-photoshop"></div>
                       <div className="figma">
-                        <Typography>80%</Typography>
+                        <Typography>60%</Typography>
                       </div>
                     </div>
                   </Box>
@@ -106,12 +106,12 @@ const Skills = () => {
               </ul>
             </ul>
           </Box>
-          <Box marginBottom="1.5rem">
+          <Box>
             <ul>
               <li>
-                <h6>
+                <Typography variant="h6">
                   <b>Front-end Development</b>
-                </h6>
+                </Typography>
               </li>
               <ul>
                 <li>
@@ -157,7 +157,7 @@ const Skills = () => {
                         <b style={{ color: "#e6b100", fontSize: "1.5rem" }}>
                           <DiJavascript />
                         </b>
-                        &nbsp;&nbsp;JavaScript(ES6+)
+                        &nbsp;&nbsp;JavaScript
                       </Typography>{" "}
                     </Box>
                     <div className="progress">
@@ -225,12 +225,12 @@ const Skills = () => {
               </ul>
             </ul>
           </Box>
-          <Box marginBottom="1.5rem">
+          <Box>
             <ul>
               <li>
-                <h6>
+                <Typography variant="h6">
                   <b>Back-end Development</b>
-                </h6>
+                </Typography>
               </li>
               <ul>
                 <li>
@@ -253,12 +253,12 @@ const Skills = () => {
                 </li>
                 <li>
                   <Box className="progress-container">
-                    <Box display="flex" alignItems="center">
+                    <Box display="flex" alignItems="center" whiteSpace="nowrap">
                       <Typography variant="h6">
                         <b style={{ color: "#003e2b", fontSize: "1.5rem" }}>
                           <SiDjango />
                         </b>
-                        &nbsp;&nbsp;Python(Django)
+                        &nbsp;&nbsp;Django(Python)
                       </Typography>{" "}
                     </Box>
                     <div className="progress">
@@ -272,12 +272,12 @@ const Skills = () => {
               </ul>
             </ul>
           </Box>
-          <Box marginBottom="1.5rem">
+          <Box>
             <ul>
               <li>
-                <h6>
+                <Typography variant="h6">
                   <b>Database</b>
-                </h6>
+                </Typography>
               </li>
               <ul>
                 <li>
@@ -325,12 +325,12 @@ const Skills = () => {
               </ul>
             </ul>
           </Box>
-          <Box marginBottom="1.5rem">
+          <Box>
             <ul>
               <li>
-                <h6>
+                <Typography variant="h6">
                   <b>Version Control</b>
-                </h6>
+                </Typography>
               </li>
               <ul>
                 <li>
