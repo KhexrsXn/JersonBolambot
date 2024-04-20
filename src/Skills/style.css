@@ -4,6 +4,16 @@
     align-items: space-between;
     justify-content: space-between;
     flex-direction: column;
+} 
+.imgStyle {
+    background-color: var(--bg-color2);
+    padding: 2rem;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .progress-container {

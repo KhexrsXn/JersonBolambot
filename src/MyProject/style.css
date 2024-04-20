@@ -30,7 +30,6 @@
     background: var(--hover-color);
 }
 .tab-content {
-    background: yellowgreen;
     display: flex;
     justify-content: flex-start;
     padding: 1rem;

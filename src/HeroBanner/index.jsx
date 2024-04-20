@@ -12,8 +12,7 @@ import figma from "../components/images/figma.png";
 import mysql from "../components/images/mysql.png";
 import photoshop from "../components/images/photoshop.png";
 import canva from "../components/images/canva.png";
-import IMG01 from "../components/images/IMG01.png";
-
+import Json1 from '../components/images/Json1.png'
 const HeroBanner = () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -112,7 +111,7 @@ const HeroBanner = () => {
         </div>
         <div className="overlay"></div>
         <div className="hero-image">
-        <img src={IMG01} alt=""/>
+        <img src={Json1} alt=""/>
         </div>
       </div>
     </section>

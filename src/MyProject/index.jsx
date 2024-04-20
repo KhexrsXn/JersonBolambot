@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import "../MyProject/style.css"
+import "../MyProject/style.css";
+import KodeGo from '../components/images/KodeGo.png';
+import HTML5 from '../components/images/HTML5.jpg';
+import ResponsiveDesign from '../components/images/ResponsiveDesign.png';
+import { Box } from '@mui/material';
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState('website'); // Set the initial active tab
@@ -9,7 +13,7 @@ const Projects = () => {
 
   return (
     <section id='projects' className='projects-container'>
-      <h1>My Portfolio</h1>
+      <h1 style={{margin: '1rem 0 0 0'}}>My Portfolio</h1>
          <div>
       <div className="tab-buttons">
         <button
@@ -40,7 +44,17 @@ const Projects = () => {
           <div>Content for Tab 2</div>
         }
         {activeTab === 'Certifications' && 
-          <div>Content for Tab 3</div>
+          <Box display='flex' justifyContent='flex-start' gap={5}>
+              <div className="certification">
+                <img src={HTML5} alt="" width={260}/>
+              </div>
+              <div className="certification">
+                <img src={KodeGo} alt="" width={250}/>
+              </div>
+              <div className="certification">
+                <img src={ResponsiveDesign} alt="" width={287}/>
+              </div>
+          </Box>
         }
       </div>
     </div>

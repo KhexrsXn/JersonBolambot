@@ -5,7 +5,7 @@ import { Box } from '@mui/material'
 const index = () => {
   return (
     <section id="contact" className='contact-container'>
-      <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column">
+      <Box className='GIT' display="flex" justifyContent="center" alignItems="center" flexDirection="column">
         <h1>Get In Touch</h1>
         <p>Message me via any of the links below!</p>
       </Box>

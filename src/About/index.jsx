@@ -5,7 +5,7 @@ import {GiTrophy} from "react-icons/gi"
 import {CgWebsite} from "react-icons/cg"
 import {FaUserGraduate} from "react-icons/fa"
 // import {FcBusinessman} from "react-icons/fc"
-import IMG02 from "../components/images/IMG02.png"
+import Json2 from "../components/images/Json2.png"
 
 const About = () => {
 
@@ -13,7 +13,7 @@ const About = () => {
     <section id="about" className="about-container">
       <div className="leftContainer">
         <Box className="image">
-          <img src={IMG02} alt=''/>
+          <img src={Json2} alt=''/>
         </Box>
       </div>
       <div className="rightContainer">
@@ -44,7 +44,7 @@ const About = () => {
             </Box>
           </Box>
         </div>
-        <Box padding="2rem 0 0 0">
+        <Box padding="3rem 0 0 0">
           <h6>
             As a web developer, I am skilled in designing and creating websites
             using various programming languages like JavaScript and Python. I

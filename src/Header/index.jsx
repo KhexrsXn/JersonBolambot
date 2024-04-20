@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"; // Import useEffect
 import Logo from "../components/images/Jerson.png";
 import "../Header/style.css";
-import DarkModeIcon from '@mui/icons-material/DarkMode';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { Box } from "@mui/material";
@@ -11,7 +10,6 @@ const Header = () => {
   const handleMenuClick = () => {
     setMenuOpen(!isMenuOpen);
   };
-
 
   useEffect(() => {
     const sections = document.querySelectorAll('section');
@@ -31,21 +29,16 @@ const Header = () => {
           });
         }
       });
-
       const header = document.querySelector(".header");
-      header.classList.toggle("sticky", window.scrollY >100);
+      header.classList.toggle("sticky", window.scrollY >300);
     };
-
     // Attach the scroll event listener when the component mounts
     window.addEventListener('scroll', handleScroll);
-
     // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-
 
   return (
     <header className="header">
@@ -57,10 +50,8 @@ const Header = () => {
         <a onClick={handleMenuClick} href="#about">About</a>
         <a onClick={handleMenuClick} href="#myskills">Skills</a>
         <a onClick={handleMenuClick} href="#projects">Portfolio</a>
-        {/* <a onClick={handleMenuClick} href="#faq">FAQ</a> */}
         <a onClick={handleMenuClick} href="#contact">Contact</a>
       </nav>
-      <Box padding="0 1rem 0 2rem"><DarkModeIcon/></Box>
       <Box className="burger-menu" padding="0 1rem" onClick={handleMenuClick}>
         {!isMenuOpen ? <MenuIcon /> :  <CloseIcon /> } 
       </Box>

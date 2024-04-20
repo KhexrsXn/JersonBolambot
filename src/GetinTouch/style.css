@@ -4,6 +4,7 @@
     height: 80vh;
     display: block;
     align-items: center;
+    position: relative;
 }
 .contact-container p {
     font-size: 2rem;
@@ -30,4 +31,19 @@
 }
 .btn-container button:hover{
     background: var(--hover-color);
+}
+
+@media (max-width: 786px) {
+    .contact-container {
+        height: 92vh;
+        padding: 10rem 3%;
+    }
+    .GIT {
+        position: absolute;
+        top: 20rem;
+        display: flex;
+        left: 21rem;
+        justify-content: center;
+        align-items: center;
+    }
 }

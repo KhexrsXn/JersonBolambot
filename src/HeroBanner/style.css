@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'home-content profession-container';
   transition: 0.5s ease;
+  overflow: hidden;
 }
 .home.noDisplay{
   display: none;
@@ -35,11 +36,10 @@
 }
 .home .profession-container {
   grid-area: profession-container;
-  /* background: purple; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden !important; */
+  overflow: hidden !important;
 }
 .profession-container .profession-box {
   width: 550px;
