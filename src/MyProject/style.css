@@ -11,7 +11,7 @@
 .projects-container h1 {
     color: var(--white-color);
 }
-.tab-buttons {
+/* .tab-buttons {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -28,7 +28,7 @@
 }
 .tab-buttons button:hover {
     background: var(--hover-color);
-}
+} */
 .tab-content {
     display: flex;
     justify-content: flex-start;

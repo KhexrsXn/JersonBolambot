@@ -3,7 +3,11 @@ import "../MyProject/style.css";
 import KodeGo from '../components/images/KodeGo.png';
 import HTML5 from '../components/images/HTML5.jpg';
 import ResponsiveDesign from '../components/images/ResponsiveDesign.png';
-import { Box } from '@mui/material';
+import DevKids from '../components/images/UXUI-Devkids.png'
+import Soria from '../components/images/UXUI-Soria.png'
+import { Box, Button } from '@mui/material';
+import SoriaWeb from '../components/images/Soria-Web.png'
+import DevKidsWeb from '../components/images/DevKids-Web.png'
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState('website'); // Set the initial active tab
@@ -15,36 +19,35 @@ const Projects = () => {
     <section id='projects' className='projects-container'>
       <h1 style={{margin: '1rem 0 0 0'}}>My Portfolio</h1>
          <div>
-      <div className="tab-buttons">
-        <button
-          onClick={() => handleTabClick('website')}
-          className={activeTab === 'website' ? 'active' : ''}
-        >
-          Website
-        </button>
-        <button
-          onClick={() => handleTabClick('UX-UI')}
-          className={activeTab === 'UX-UI' ? 'active' : ''}
-        >
-          UX-UI
-        </button>
-        <button
-          onClick={() => handleTabClick('Certifications')}
-          className={activeTab === 'Certifications' ? 'active' : ''}
-        >
-          Certifications
-        </button>
+      <div style={{display: 'flex', justifyContent: 'center', padding: '2rem 0'}}>
+        <Button size='large' variant={activeTab === 'website' ? 'contained' : 'outlined'} onClick={() => handleTabClick('website')}> Website </Button>
+        <Button size='large' variant={activeTab === 'UX-UI' ? 'contained' : 'outlined'} onClick={() => handleTabClick('UX-UI')}> UX-UI </Button>
+        <Button size='large' variant={activeTab === 'Certifications' ? 'contained' : 'outlined'} onClick={() => handleTabClick('Certifications')}> Certifications </Button>
       </div>
-      <div className="tab-content">
+      <div className="tab-content" >
         {/* Tab content sections */}
         {activeTab === 'website' && 
-          <div>Content for Tab 1</div>
+          <Box display='flex' justifyContent='flex-start' gap={5} flexWrap='wrap'>
+            <div className="certification">
+              <img src={DevKidsWeb} alt="" width={400}/>
+            </div>
+            <div className="certification">
+              <img src={SoriaWeb  } alt="" width={400}/>
+            </div>
+          </Box>
         }
         {activeTab === 'UX-UI' && 
-          <div>Content for Tab 2</div>
+          <Box display='flex' justifyContent='flex-start' gap={5} flexWrap='wrap'>
+            <div className="certification">
+              <img src={DevKids} alt="" width={500}/>
+            </div>
+            <div className="certification">
+              <img src={Soria} alt="" width={500}/>
+            </div>
+          </Box>
         }
         {activeTab === 'Certifications' && 
-          <Box display='flex' justifyContent='flex-start' gap={5}>
+          <Box display='flex' justifyContent='flex-start' gap={5} flexWrap='wrap'>
               <div className="certification">
                 <img src={HTML5} alt="" width={260}/>
               </div>
