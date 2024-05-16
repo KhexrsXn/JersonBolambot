@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/KhexrsXn/JersonBolambot/static/css/main.f347dd97.css",
-    "main.js": "/KhexrsXn/JersonBolambot/static/js/main.89bcb8d0.js",
-    "static/media/Soria-Web.png": "/KhexrsXn/JersonBolambot/static/media/Soria-Web.3748197190627b472a46.png",
-    "static/media/DevKids-Web.png": "/KhexrsXn/JersonBolambot/static/media/DevKids-Web.3485ec3c88035256b8f3.png",
-    "static/media/KodeGo.png": "/KhexrsXn/JersonBolambot/static/media/KodeGo.9ee0674261b25071fdee.png",
-    "static/media/UXUI-Devkids.png": "/KhexrsXn/JersonBolambot/static/media/UXUI-Devkids.11d3ad50c0b45768307b.png",
-    "static/media/Json1.png": "/KhexrsXn/JersonBolambot/static/media/Json1.8b5f7536f7f2689b182d.png",
-    "static/media/UXUI-Soria.png": "/KhexrsXn/JersonBolambot/static/media/UXUI-Soria.051ab8710d45961f1f1c.png",
-    "static/media/HTML5.jpg": "/KhexrsXn/JersonBolambot/static/media/HTML5.bcc7f2a6398d1417952b.jpg",
-    "static/media/ResponsiveDesign.png": "/KhexrsXn/JersonBolambot/static/media/ResponsiveDesign.5cbfafb6784b404d6b2b.png",
-    "static/media/Json2.png": "/KhexrsXn/JersonBolambot/static/media/Json2.f65f4de1ffb9f2fba330.png",
-    "static/media/canva.png": "/KhexrsXn/JersonBolambot/static/media/canva.6ceaf21d533c11d5ad78.png",
-    "static/media/mysql.png": "/KhexrsXn/JersonBolambot/static/media/mysql.7351e041e492974911f0.png",
-    "static/media/Jerson.png": "/KhexrsXn/JersonBolambot/static/media/Jerson.5661e586c67edc7a6b07.png",
-    "static/media/figma.png": "/KhexrsXn/JersonBolambot/static/media/figma.d5c5fb65db3cce70281b.png",
-    "static/media/python.png": "/KhexrsXn/JersonBolambot/static/media/python.ec1c009189097a91a538.png",
-    "static/media/photoshop.png": "/KhexrsXn/JersonBolambot/static/media/photoshop.c0e8ca8e80b91669914e.png",
-    "index.html": "/KhexrsXn/JersonBolambot/index.html",
-    "main.f347dd97.css.map": "/KhexrsXn/JersonBolambot/static/css/main.f347dd97.css.map",
-    "main.89bcb8d0.js.map": "/KhexrsXn/JersonBolambot/static/js/main.89bcb8d0.js.map"
+    "main.css": "/JersonBolambot/static/css/main.f347dd97.css",
+    "main.js": "/JersonBolambot/static/js/main.475a8286.js",
+    "static/media/Soria-Web.png": "/JersonBolambot/static/media/Soria-Web.3748197190627b472a46.png",
+    "static/media/DevKids-Web.png": "/JersonBolambot/static/media/DevKids-Web.3485ec3c88035256b8f3.png",
+    "static/media/KodeGo.png": "/JersonBolambot/static/media/KodeGo.9ee0674261b25071fdee.png",
+    "static/media/UXUI-Devkids.png": "/JersonBolambot/static/media/UXUI-Devkids.11d3ad50c0b45768307b.png",
+    "static/media/Json1.png": "/JersonBolambot/static/media/Json1.8b5f7536f7f2689b182d.png",
+    "static/media/UXUI-Soria.png": "/JersonBolambot/static/media/UXUI-Soria.051ab8710d45961f1f1c.png",
+    "static/media/HTML5.jpg": "/JersonBolambot/static/media/HTML5.bcc7f2a6398d1417952b.jpg",
+    "static/media/ResponsiveDesign.png": "/JersonBolambot/static/media/ResponsiveDesign.5cbfafb6784b404d6b2b.png",
+    "static/media/Json2.png": "/JersonBolambot/static/media/Json2.f65f4de1ffb9f2fba330.png",
+    "static/media/canva.png": "/JersonBolambot/static/media/canva.6ceaf21d533c11d5ad78.png",
+    "static/media/mysql.png": "/JersonBolambot/static/media/mysql.7351e041e492974911f0.png",
+    "static/media/Jerson.png": "/JersonBolambot/static/media/Jerson.5661e586c67edc7a6b07.png",
+    "static/media/figma.png": "/JersonBolambot/static/media/figma.d5c5fb65db3cce70281b.png",
+    "static/media/python.png": "/JersonBolambot/static/media/python.ec1c009189097a91a538.png",
+    "static/media/photoshop.png": "/JersonBolambot/static/media/photoshop.c0e8ca8e80b91669914e.png",
+    "index.html": "/JersonBolambot/index.html",
+    "main.f347dd97.css.map": "/JersonBolambot/static/css/main.f347dd97.css.map",
+    "main.475a8286.js.map": "/JersonBolambot/static/js/main.475a8286.js.map"
   },
   "entrypoints": [
     "static/css/main.f347dd97.css",
-    "static/js/main.89bcb8d0.js"
+    "static/js/main.475a8286.js"
   ]
 }
