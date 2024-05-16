@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/KhexrsXn/PortfolioV2/static/css/main.f347dd97.css",
-    "main.js": "/KhexrsXn/PortfolioV2/static/js/main.fbea4b89.js",
-    "static/media/Soria-Web.png": "/KhexrsXn/PortfolioV2/static/media/Soria-Web.3748197190627b472a46.png",
-    "static/media/DevKids-Web.png": "/KhexrsXn/PortfolioV2/static/media/DevKids-Web.3485ec3c88035256b8f3.png",
-    "static/media/KodeGo.png": "/KhexrsXn/PortfolioV2/static/media/KodeGo.9ee0674261b25071fdee.png",
-    "static/media/UXUI-Devkids.png": "/KhexrsXn/PortfolioV2/static/media/UXUI-Devkids.11d3ad50c0b45768307b.png",
-    "static/media/Json1.png": "/KhexrsXn/PortfolioV2/static/media/Json1.8b5f7536f7f2689b182d.png",
-    "static/media/UXUI-Soria.png": "/KhexrsXn/PortfolioV2/static/media/UXUI-Soria.051ab8710d45961f1f1c.png",
-    "static/media/HTML5.jpg": "/KhexrsXn/PortfolioV2/static/media/HTML5.bcc7f2a6398d1417952b.jpg",
-    "static/media/ResponsiveDesign.png": "/KhexrsXn/PortfolioV2/static/media/ResponsiveDesign.5cbfafb6784b404d6b2b.png",
-    "static/media/Json2.png": "/KhexrsXn/PortfolioV2/static/media/Json2.f65f4de1ffb9f2fba330.png",
-    "static/media/canva.png": "/KhexrsXn/PortfolioV2/static/media/canva.6ceaf21d533c11d5ad78.png",
-    "static/media/mysql.png": "/KhexrsXn/PortfolioV2/static/media/mysql.7351e041e492974911f0.png",
-    "static/media/Jerson.png": "/KhexrsXn/PortfolioV2/static/media/Jerson.5661e586c67edc7a6b07.png",
-    "static/media/figma.png": "/KhexrsXn/PortfolioV2/static/media/figma.d5c5fb65db3cce70281b.png",
-    "static/media/python.png": "/KhexrsXn/PortfolioV2/static/media/python.ec1c009189097a91a538.png",
-    "static/media/photoshop.png": "/KhexrsXn/PortfolioV2/static/media/photoshop.c0e8ca8e80b91669914e.png",
-    "index.html": "/KhexrsXn/PortfolioV2/index.html",
-    "main.f347dd97.css.map": "/KhexrsXn/PortfolioV2/static/css/main.f347dd97.css.map",
-    "main.fbea4b89.js.map": "/KhexrsXn/PortfolioV2/static/js/main.fbea4b89.js.map"
+    "main.css": "/PortfolioV2/static/css/main.f347dd97.css",
+    "main.js": "/PortfolioV2/static/js/main.8dd3c2ac.js",
+    "static/media/Soria-Web.png": "/PortfolioV2/static/media/Soria-Web.3748197190627b472a46.png",
+    "static/media/DevKids-Web.png": "/PortfolioV2/static/media/DevKids-Web.3485ec3c88035256b8f3.png",
+    "static/media/KodeGo.png": "/PortfolioV2/static/media/KodeGo.9ee0674261b25071fdee.png",
+    "static/media/UXUI-Devkids.png": "/PortfolioV2/static/media/UXUI-Devkids.11d3ad50c0b45768307b.png",
+    "static/media/Json1.png": "/PortfolioV2/static/media/Json1.8b5f7536f7f2689b182d.png",
+    "static/media/UXUI-Soria.png": "/PortfolioV2/static/media/UXUI-Soria.051ab8710d45961f1f1c.png",
+    "static/media/HTML5.jpg": "/PortfolioV2/static/media/HTML5.bcc7f2a6398d1417952b.jpg",
+    "static/media/ResponsiveDesign.png": "/PortfolioV2/static/media/ResponsiveDesign.5cbfafb6784b404d6b2b.png",
+    "static/media/Json2.png": "/PortfolioV2/static/media/Json2.f65f4de1ffb9f2fba330.png",
+    "static/media/canva.png": "/PortfolioV2/static/media/canva.6ceaf21d533c11d5ad78.png",
+    "static/media/mysql.png": "/PortfolioV2/static/media/mysql.7351e041e492974911f0.png",
+    "static/media/Jerson.png": "/PortfolioV2/static/media/Jerson.5661e586c67edc7a6b07.png",
+    "static/media/figma.png": "/PortfolioV2/static/media/figma.d5c5fb65db3cce70281b.png",
+    "static/media/python.png": "/PortfolioV2/static/media/python.ec1c009189097a91a538.png",
+    "static/media/photoshop.png": "/PortfolioV2/static/media/photoshop.c0e8ca8e80b91669914e.png",
+    "index.html": "/PortfolioV2/index.html",
+    "main.f347dd97.css.map": "/PortfolioV2/static/css/main.f347dd97.css.map",
+    "main.8dd3c2ac.js.map": "/PortfolioV2/static/js/main.8dd3c2ac.js.map"
   },
   "entrypoints": [
     "static/css/main.f347dd97.css",
-    "static/js/main.fbea4b89.js"
+    "static/js/main.8dd3c2ac.js"
   ]
 }
