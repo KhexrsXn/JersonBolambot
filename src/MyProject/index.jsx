@@ -29,10 +29,14 @@ const Projects = () => {
         {activeTab === 'website' && 
           <Box display='flex' justifyContent='flex-start' gap={5} flexWrap='wrap'>
             <div className="certification">
-              <img src={DevKidsWeb} alt="" width={400}/>
+              <a target='_blank' href='https://devkidsacademy.netlify.app/' rel="noreferrer" style={{cursor: 'pointer'}}>
+                <img src={DevKidsWeb} alt="" width={400}/>
+              </a>
             </div>
             <div className="certification">
-              <img src={SoriaWeb  } alt="" width={400}/>
+              <a target='_blank' href='https://soria-hotel.web.app/' rel="noreferrer" style={{cursor: 'pointer'}}>
+                <img src={SoriaWeb  } alt="" width={400}/>
+              </a>
             </div>
           </Box>
         }
