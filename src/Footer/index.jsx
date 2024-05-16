@@ -18,7 +18,7 @@ const Footer = () => {
       <hr/>
       <Box display="flex" justifyContent="center" alignItems="center">
         <Typography variant='h6' color="#fff">
-          2023 JERSON BOLAMBOT &copy; All Rights Reserved
+          2024 JERSON BOLAMBOT &copy; All Rights Reserved
         </Typography>
       </Box>
     </footer>
